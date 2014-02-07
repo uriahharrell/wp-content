@@ -124,7 +124,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+
 	<!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 	<div id="wrapper" class="row">
 
@@ -147,7 +147,7 @@
 
 			 	 <!-- Left Nav Section -->
 			    <ul class="left large-2 large-offset-1 columns">
-			      <li><img src="wp-content/themes/matchfc/_/inc/images/header-logo.png"></li>
+			      <li><img src="wp-content/themes/matchfc/_/inc/images/footer-logo.png"></li>
 			    </ul>
 
 			    <!-- Right Nav Section -->

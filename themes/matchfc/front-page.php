@@ -8,7 +8,7 @@
  get_header(); ?>
 
 <div class="bg-img large-12 columns">
-	<div class="large-12 large-offset-1 columns">
+	<div class="large-8 large-offset-1 columns">
 		<h1>MAKE GAMES HAPPEN</h1>
 		<h2>Find your prefect match, or create your own.</h2>
 		<div class="btn-box">
@@ -27,25 +27,27 @@
 </div>
 
 <div class="how-imgs large-12 columns">
-	<div class="profile-img large-2 large-offset-1 columns">
-		<img src="wp-content/themes/matchfc/_/inc/images/profile_icon.png" alt"">
-		<h4>MAKE A PROFILE</h4>
+	<div class="row">
+		<div class="profile-img large-2 large-offset-1 columns">
+			<img src="wp-content/themes/matchfc/_/inc/images/profile_icon.png" alt"">
+			<h4>MAKE A PROFILE</h4>
+		</div>
+		<div class="arrows large-2 columns">
+			<img src="wp-content/themes/matchfc/_/inc/images/arrows.png" alt"">
+		</div>
+		<div class="search-img large-2 columns">
+			<img src="wp-content/themes/matchfc/_/inc/images/search_icon.png" alt"">
+			<h4>SEARCH FOR GAMES <br> OR MAKE YOUR OWN</h4>
+		</div>
+		<div class="arrows large-2 columns">
+			<img src="wp-content/themes/matchfc/_/inc/images/arrows.png" alt"">
+		</div>
+		<div class="game-img large-2 columns">
+			<img src="wp-content/themes/matchfc/_/inc/images/game_icon.png" alt"">
+			<h4>PLAY GAMES</h4>
+		</div>
+		<div class="large-1 columns"></div>
 	</div>
-	<div class="arrows large-2 columns">
-		<img src="wp-content/themes/matchfc/_/inc/images/arrows.png" alt"">
-	</div>
-	<div class="search-img large-2 columns">
-		<img src="wp-content/themes/matchfc/_/inc/images/search_icon.png" alt"">
-		<h4>SEARCH FOR GAMES <br> OR MAKE YOUR OWN</h4>
-	</div>
-	<div class="arrows large-2 columns">
-		<img src="wp-content/themes/matchfc/_/inc/images/arrows.png" alt"">
-	</div>
-	<div class="game-img large-2 columns">
-		<img src="wp-content/themes/matchfc/_/inc/images/game_icon.png" alt"">
-		<h4>PLAY GAMES</h4>
-	</div>
-	<div class="large-1 columns"></div>
 </div>
 
 
