@@ -31,7 +31,7 @@
                 </ul>
                 <section class="top-bar-section row">
                   <!-- Left Nav Section, logo image -->
-                  <img src="<?php bloginfo('template_directory'); ?>/css/images/footer-logo.png" alt="Match">
+                  <img src="<?php bloginfo('template_directory'); ?>/css/images/header-logo.png" alt="Match">
                   <!-- Right Nav Section -->
                   <div class="right">
                     <?php wp_nav_menu( array( 'theme_location' => 'top-bar-r' ) ); ?>

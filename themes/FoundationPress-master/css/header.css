@@ -3,27 +3,32 @@
 }
 
 /*Navigation Bar*/
-.top-bar {
+nav.top-bar {
 	width: 100%;
 	height: 100%;
 	background: #234D68;
+	padding: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
 	border-bottom: 8px solid #A9e0f9;
 }
 
 /*Logo in the Header*/
 .top-bar-section img {
-	height: 65px;
-	margin: 6px 0;
-	margin-left: 10px;
+	max-width: 126;
+	height: auto;
+	margin: auto;
 }
+
 
 /*Right Side Nave Links*/
 .top-bar-section ul li a {
-	font-family: MyriadPro-Light;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt;
+	letter-spacing: 3px;
 	color: #A9E0f9;
 	background: #234D68;
-	margin: 27px 5px;
+	margin-top: 20px;
 	text-align: center;
 }
 

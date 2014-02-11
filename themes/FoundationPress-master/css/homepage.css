@@ -9,26 +9,25 @@
 	width: 100%;
 	min-height: 630px;
 	background-size: cover;
+	padding: 30px;
 }
 
 /*Header Text*/
 h1 {
-	font-family: MyriadPro-Light;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 36pt;
 	letter-spacing: 4px;
 	color: #a9e0f9;
 	margin-top: 190px;
-	margin-left: 10px;
 }
 
 /*Sub-header Text*/
 h2 {
-	font-family: MyriadPro-Light;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	letter-spacing: 3px;
 	color: #a9e0f9;
 	margin-top: -20px;
-	margin-left: 10px;
 }
 
 /*Translucent white box containing find and create buttons*/
@@ -36,17 +35,16 @@ h2 {
 	background: rgba(255,255,255,.1);
 	width: 510px;
 	padding: 20px;
-	margin-left: 10px;
 }
 
 /*Find and create buttons*/
 .find-btn, .create-btn {
-	font-family: MyriadPro-Light;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	text-align: center;
-	width: 218px;
+	width: 222px;
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 }
 
 /*Find Button*/
@@ -68,7 +66,7 @@ h2 {
 
 /*how it works text*/
 .howitworks p {
-	font-family: MyriadPro-Light;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	letter-spacing: 3px;
 	text-align: center;
@@ -84,7 +82,7 @@ h2 {
 }
 
 .howimages p {
-	font-family: MyriadPro-Bold;
+	font-family: MyriadPro-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt;
 	text-align: center;
 	line-height: 110%;

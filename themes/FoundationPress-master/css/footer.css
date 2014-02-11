@@ -1,12 +1,15 @@
 footer {
 	background: #234d68;
+	padding-left: 30px;
+	padding-right: 30px;
 	border-bottom: 8px solid #A9e0f9;
 }
 
+/*Logo*/
 footer img {
 	display: block;
-	max-width: 200px;
-	margin: 70px auto;
+	max-width: 156px;
+	margin: 82px auto;
 	padding: 0;
 	padding-left: 10px;
 
@@ -24,7 +27,7 @@ footer li {
 }
 
 footer li a {
-	font-family: MyriadPro-Light;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12pt;
 	color: #a9e0f9;
 	margin: 0;
@@ -32,7 +35,7 @@ footer li a {
 }
 
 p.contact-btn {
-	font-family: MyriadPro-Light;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	text-align: center;
 	color: #A9e0f9;

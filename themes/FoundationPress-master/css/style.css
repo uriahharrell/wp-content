@@ -1,7 +1,18 @@
 @import url('header.css');
 @import url('fonts.css');
-@import url('home.css');
+@import url('homepage.css');
 @import url('footer.css');
 
 
 
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	font-family: 'Lato-Reg', helvetica, sans-serif;
+	color:#fff;
+}

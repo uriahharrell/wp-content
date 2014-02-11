@@ -7,8 +7,8 @@
 		<h2>Find the perfect match or create your own.</h2>
 
 		<div class="btn-box wrap columns">
-			<p class="find-btn columns">FIND YOUR MATCH</p>
-			<p class="create-btn columns">CREATE YOUR MATCH</p>
+			<a class="columns find-btn" href="#">FIND YOUR MATCH</a>
+			<a class="columns create-btn " href="#">CREATE YOUR MATCH</a>
 		</div>
 	</div>
 </section>
@@ -20,23 +20,23 @@
 <section class="howimages wrap">
 	<div class="row">
 
-		<div class="howprofile large-3 columns">
+		<div class="howprofile medium-3 columns">
 			<p>MAKE A PROFILE</p>
 			<img src="<?php bloginfo('template_directory'); ?>/css/images/profile_icon.png" alt="Profile Icon">
 		</div>
 		
-		<div class="large-6 columns">
-			<img class="divide large-3 columns" src="<?php bloginfo('template_directory'); ?>/css/images/arrows.png" alt="Arrows">
+		<div class="medium-6 columns">
+			<img class="hide-for-small divide medium-3 columns" src="<?php bloginfo('template_directory'); ?>/css/images/arrows.png" alt="Arrows">
 
-			<div class="howsearch large-6 columns">
+			<div class="howsearch medium-6 columns">
 				<p>SEARCH FOR GAMES<br>OR MAKE YOUR OWN</p>
 				<img src="<?php bloginfo('template_directory'); ?>/css/images/search_icon.png" alt="Hourglass Icon">
 			</div>
 
-			<img class="divide large-3 columns" src="<?php bloginfo('template_directory'); ?>/css/images/arrows.png" alt="Arrows">
+			<img class="hide-for-small divide medium-3 columns" src="<?php bloginfo('template_directory'); ?>/css/images/arrows.png" alt="Arrows">
 		</div>
 
-		<div class="howgames large-3 columns">
+		<div class="howgames medium-3 columns">
 			<p>PLAY GAMES</p>
 			<img src="<?php bloginfo('template_directory'); ?>/css/images/game_icon.png" alt="Soccerball Icon">
 		</div>
