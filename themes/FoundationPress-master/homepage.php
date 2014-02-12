@@ -1,12 +1,12 @@
 <?php /*Template Name: Homepage*/ get_header(); ?>
 
 <section class="homepage">
-	<div class="row">
+	<div class="row relative">
 		<h1>MAKE GAMES HAPPEN</h1>
 
 		<h2>Find the perfect match or create your own.</h2>
 
-		<div class="btn-box wrap columns">
+		<div class="btn-box wrap columns btn-box">
 			<a class="columns find-btn" href="#">FIND YOUR MATCH</a>
 			<a class="columns create-btn " href="#">CREATE YOUR MATCH</a>
 		</div>
@@ -14,7 +14,7 @@
 </section>
 
 <section class="howitworks wrap">
-			<p>- HOW IT WORKS -</p>
+	<p>- HOW IT WORKS -</p>
 </section>
 
 <section class="howimages wrap">

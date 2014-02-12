@@ -33,7 +33,7 @@
                   <!-- Left Nav Section, logo image -->
                   <img src="<?php bloginfo('template_directory'); ?>/css/images/header-logo.png" alt="Match">
                   <!-- Right Nav Section -->
-                  <div class="right">
+                  <div class="hide-for-small nav-box">
                     <?php wp_nav_menu( array( 'theme_location' => 'top-bar-r' ) ); ?>
                   </div>
                 </section>

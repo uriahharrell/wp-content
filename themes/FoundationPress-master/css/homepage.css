@@ -2,6 +2,10 @@
 	height:100%;
 }
 
+.relative {
+	position: relative;
+}
+
 /*Soccer player background image*/
 .homepage {
 	background: url('images/bg.jpg') center ;
@@ -9,7 +13,8 @@
 	width: 100%;
 	min-height: 630px;
 	background-size: cover;
-	padding: 30px;
+	padding: 0 30px;
+	
 }
 
 /*Header Text*/
@@ -97,8 +102,6 @@ h2 {
 	margin-bottom: 20px;
 }
 
-
-
 .howprofile img, .howsearch img, .howgames img {
 	height: 100px;
 	display: block;
@@ -112,4 +115,99 @@ h2 {
 	margin: 0 auto;
 	margin-top: 115px;
 	margin-bottom: 55px;
+}
+
+@media (min-width: 641px) and (max-width: 875px) {
+		h1 {
+			margin-top: 100px;
+		}
+}
+
+@media (min-width: 1px) and (max-width: 640px) {
+	h1 {
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.btn-box {
+		width: 100%;
+		height: 185px;
+		position: absolute;
+		margin: 0px 0 0 -50%;
+		left: 50%;
+	}
+
+	.find-btn, .create-btn {
+		font-size: 20pt;
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	.find-btn {
+		margin-bottom: 10px;
+	}
+
+	.create.btn {
+		margin-top: 10px;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 572px) {
+	h1 {
+		font-size: 40pt;
+		line-height: normal;
+		margin-bottom: 20px;
+		border-bottom: 2px solid #A9E0f9;
+	}
+
+	h2 {
+		margin-top: 16px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 943px) and (max-width: 974px) {
+	.howsearch p {
+		margin: 15px 0 10px 0;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 942px) {
+	.howgames p, .howprofile p {
+		margin-bottom: 70px; 
+	}
+
+	.divide {
+		margin-top: 135px;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 754px) {
+	.howprofile p {
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 640px) {
+	.howimages {
+		padding: 0 30px 0 30px;
+	}
+
+	.howprofile p, .howgames p, .howsearch p {
+		margin-bottom: 20px;
+		margin-top: 0;
+		padding-top: 30px;
+	}
+
+	.howprofile img, .howgames img, .howsearch img {
+		margin-bottom: 30px;
+	}
+
+	.howgames p, .howsearch p {
+		border-top: 2px solid #234D68;
+	}
 }
