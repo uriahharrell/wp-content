@@ -1,17 +1,14 @@
-
-.header-bar {
-	max-width: 1000px;
-}
-
 /*Navigation Bar*/
 nav.top-bar {
 	width: 100%;
 	height: 100%;
 	background: #234D68;
-	padding: 10px;
-	padding-right: 30px;
-	padding-left: 30px;
+	padding: 10px 30px 10px 30px;
 	border-bottom: 8px solid #A9e0f9;
+}
+
+.left-off-canvas-menu {
+	height: 100%;
 }
 
 /*Logo in the Header*/
@@ -26,7 +23,7 @@ nav.top-bar {
 }
 
 /*Right Side Nave Links*/
-.top-bar-section ul li a {
+.top-bar-section ul li a, .left-off-canvas-menu ul li a {
 	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt;
 	letter-spacing: 3px;
@@ -36,7 +33,33 @@ nav.top-bar {
 	text-align: center;
 }
 
+/*Styling for the off-canvas nav*/
+nav.tab-bar {
+	background: #234d68;
+}
+.left-off-canvas-menu {
+	background: #234d68;
+	border-right: 8px solid #A9E0f9;
+}
 
+.left-off-canvas-menu ul li {
+	list-style: none;
+	margin: 20px 0;
+}
+
+.left-off-canvas-menu ul li a {
+	font-size: 18pt;
+}
+
+.menu-icon-box {
+	position: absolute;
+	left:0;
+	right:0;
+	z-index:10000;
+	height: 45px;
+	width: 45px;
+	background: #234d68;
+}
 
 /*Set the defeault background for nav items*/
 .top-bar-section li:not(.has-form) a:not(.button) {
@@ -49,6 +72,7 @@ nav.top-bar {
 	background: #3c718E;
 }
 
+/*Navigation breaks and requires fixing*/
 @media (min-width: 640px) and (max-width: 875px) {
 
 		/*Prep the nav-box so that I can center the navigation*/
@@ -89,6 +113,14 @@ nav.top-bar {
 			padding-right: 9px;
 		}
 
+}
+
+@media (max-width:640px) {
+	/*center the logo for small screens*/
+	.top-bar-section img {
+		display: block;
+		margin: 5px auto 5px auto;
+	}
 }
 
 

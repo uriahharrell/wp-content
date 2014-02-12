@@ -1,9 +1,16 @@
+/*Apply to dives that will have their height determined by their content*/
 .wrap {
 	height:100%;
 }
 
+/*make some div's relative so that I can arrange items within them using absolute positioning*/
 .relative {
 	position: relative;
+}
+
+/*apply default font of MyriadPro-Light to the page*/
+h1, h2, .find-btn, .create-btn, .howitworks p {
+font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*Soccer player background image*/
@@ -17,18 +24,16 @@
 	
 }
 
-/*Header Text*/
+/*Headline Text*/
 h1 {
-	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 36pt;
 	letter-spacing: 4px;
 	color: #a9e0f9;
 	margin-top: 190px;
 }
 
-/*Sub-header Text*/
+/*Sub-headline Text*/
 h2 {
-	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	letter-spacing: 3px;
 	color: #a9e0f9;
@@ -44,7 +49,6 @@ h2 {
 
 /*Find and create buttons*/
 .find-btn, .create-btn {
-	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	text-align: center;
 	width: 222px;
@@ -71,7 +75,6 @@ h2 {
 
 /*how it works text*/
 .howitworks p {
-	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	letter-spacing: 3px;
 	text-align: center;
@@ -86,6 +89,7 @@ h2 {
 	background: #3c718E;
 }
 
+/*Basic styling for the text above all the how images*/
 .howimages p {
 	font-family: MyriadPro-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt;
@@ -97,33 +101,36 @@ h2 {
 	margin-bottom: 30px;
 }
 
+/*different margins for .howsearch bc it has two lines of text*/
 .howsearch p {
 	margin-top: 25px;
 	margin-bottom: 20px;
 }
 
+/*center all the how images horizontally and give them the same height*/
 .howprofile img, .howsearch img, .howgames img {
 	height: 100px;
 	display: block;
-	margin: 0 auto;
-	margin-bottom: 35px;
+	margin: 0 auto 35px auto;
 }
 
+/*center horizontally and line up the arrows with the other images*/
 .divide {
 	height: 50px;
 	display: block;
-	margin: 0 auto;
-	margin-top: 115px;
-	margin-bottom: 55px;
+	margin: 115px auto 55px auto;
 }
 
+/*bring up the headline text for medium-small devices*/
 @media (min-width: 641px) and (max-width: 875px) {
 		h1 {
 			margin-top: 100px;
 		}
 }
 
+/*styling for small devices*/
 @media (min-width: 1px) and (max-width: 640px) {
+	/*Center the headlines and bring closer to header*/
 	h1 {
 		margin-top: 50px;
 		text-align: center;
@@ -133,6 +140,7 @@ h2 {
 		text-align: center;
 	}
 
+	/*Center the box containing find and create btns, make it stay centered when screen gets smaller*/
 	.btn-box {
 		width: 100%;
 		height: 185px;
@@ -141,6 +149,7 @@ h2 {
 		left: 50%;
 	}
 
+	/*Make the font on find and create btns larger, stack them vertically, add space between them*/
 	.find-btn, .create-btn {
 		font-size: 20pt;
 		width: 100%;
@@ -148,19 +157,20 @@ h2 {
 	}
 
 	.find-btn {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	.create.btn {
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 }
 
+/*fix break in header and subheader text by resizing text*/
 @media (min-width: 1px) and (max-width: 572px) {
 	h1 {
 		font-size: 40pt;
 		line-height: normal;
-		margin-bottom: 20px;
+		padding-bottom: 15px;
 		border-bottom: 2px solid #A9E0f9;
 	}
 
@@ -170,12 +180,14 @@ h2 {
 	}
 }
 
+/*Keep the howimages lined up properly when howsearch text goes to 3 lines*/
 @media (min-width: 943px) and (max-width: 974px) {
 	.howsearch p {
 		margin: 15px 0 10px 0;
 	}
 }
 
+/*Keep the howimages lined up properly when howsearch text goes to 4 lines*/
 @media (min-width: 1px) and (max-width: 942px) {
 	.howgames p, .howprofile p {
 		margin-bottom: 70px; 
@@ -186,12 +198,14 @@ h2 {
 	}
 }
 
+/*Keep the howimages lined up properly when howprofile text goes to 2 lines*/
 @media (min-width: 1px) and (max-width: 754px) {
 	.howprofile p {
 		margin-bottom: 50px;
 	}
 }
 
+/*For small screens, stack howimages vertically, and add dividing lines for better readability*/
 @media (min-width: 1px) and (max-width: 640px) {
 	.howimages {
 		padding: 0 30px 0 30px;
