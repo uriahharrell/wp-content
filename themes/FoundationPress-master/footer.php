@@ -1,7 +1,7 @@
   <footer class="wrap">
     <div class="row">
-      <!-- footer logo, not visible on small devices -->
-      <img class="hide-for-small small-push-12 medium-3 large-3 columns" src="<?php bloginfo('template_directory'); ?>/css/images/footer-logo.png" alt="MatchFC: Match Fixture Connection">
+      <!-- footer logo -->
+      <img class="small-centered medium-uncentered medium-3 large-3 columns" src="<?php bloginfo('template_directory'); ?>/css/images/footer-logo.png" alt="MatchFC: Match Fixture Connection">
 
       <!-- Container for footer navigation -->
       <div class="small-12 medium-6 large-5 large-offset-1 columns">
@@ -28,6 +28,8 @@
       <div class="small-12 medium-3 large-3 columns">
         <a class="contact-btn">CONTACT US</a>
       </div>
+      
+      <a class="exit-off-canvas"></a>
 
     </div>
   </footer>

@@ -9,7 +9,7 @@
 
 		<h2>Find the perfect match or create your own.</h2>
 
-		<div class="btn-box wrap columns btn-box">
+		<div class="wrap columns btn-box">
 			<a class="columns find-btn" href="#">FIND YOUR MATCH</a>
 			<a class="columns create-btn " href="#">CREATE YOUR MATCH</a>
 		</div>

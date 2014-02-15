@@ -13,7 +13,7 @@ nav.top-bar {
 
 /*Logo in the Header*/
 .top-bar-section img {
-	max-width: 126;
+	max-width: 126px;
 	height: auto;
 	margin: auto;
 }
@@ -80,6 +80,7 @@ nav.tab-bar {
 			position: relative;
 			width: 100%;
 			text-align: center;
+			margin: 5px 0;
 		}
 		 
 		/*center the logo image*/
@@ -99,6 +100,7 @@ nav.tab-bar {
 		/*center the navigation below the logo*/
 		.nav-box ul {
 			display: inline-block;
+
 		}
 
 		/*put borders between the nav items so that they are more readable and distinguishable from each other*/
