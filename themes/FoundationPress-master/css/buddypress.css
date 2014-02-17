@@ -1242,7 +1242,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	margin-top: 0;
 }
 #buddypress div.item-list-tabs ul li.last {
-	float: right;
+	float: left;
 	margin: 7px 0 0;
 }
 #buddypress div.item-list-tabs#subnav ul li.last {
@@ -1598,5 +1598,17 @@ body.register #buddypress div.page ul {
 	}
 }
 
+/*Begin Custom Styles------------------------------------------------------------------------------------------*/
+/*Members Page*/
+/*Member Search Form*/
+#buddypress div.dir-search {
+	margin: 0;
+}
 
-/*------------------------------------------------------------------------------------------*/
+
+div#buddypress div.item-list-tabs ul li {
+	float: left;
+}
+
+
+

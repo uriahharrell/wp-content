@@ -150,14 +150,7 @@ h2 {
 	h1 {
 		font-family: MyriadPro-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 24pt;
-		padding-bottom: 15pt;
 	}
-
-	h2 {
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-}
 
 @media (min-width: 1px) and (max-width: 463px) {
 	h1 {
