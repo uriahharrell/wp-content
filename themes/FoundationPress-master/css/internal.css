@@ -1,11 +1,11 @@
 div#buddypress {
-	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: MyriadPro-regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	letter-spacing: 3px;
 }
 
 div.bg-grey {
-	background: rgba(35,77,104,0.5);
+	background: #fff;
 	padding: 30px;
 	
 }
@@ -16,11 +16,11 @@ div.bg-grey {
 }
 
 .internal-bg {
-	background: url('images/blank-field.jpg') center ;
+	background: #eee;
 	z-index: -10000;
 	width: 100%;
-	min-height: 630px;
-	background-size: cover;
-	padding: 30px 30px;
+	height: 100%;
+	border-bottom: 8px solid #a9e0f9;
+	
 }
 

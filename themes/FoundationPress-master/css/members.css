@@ -3,8 +3,10 @@
 	margin: 0;
 }
 
+/*Avatar img*/
 #buddypress div#item-header img.avatar {
 	margin: 0 30px 30px 0;
+	border: solid 4px #234d68;
 }
 
 /*Navigation background*/
@@ -13,16 +15,23 @@ div#object-nav ul li {
 }
 
 /*Navigation styling*/
-a#user-xprofile, a#user-events, a#user-friends, a#user-messages, a#user-settings, h2 {
+div#buddypress div#item-nav ul li a {
 	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16pt;
+	font-size: 14pt;
 	letter-spacing: 3px;
 	color: #a9e0f9;
+}
+
+/*background for main nav and sub nav*/
+#buddypress #item-nav div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a {
+	background: #a9e0f9;
+	color: #234d68;
 }
 
 /*Name beside profile picture*/
 h2 {
 	font-size: 20pt;
+	color: #234d68;
 
 }
 
@@ -31,25 +40,16 @@ div span.activity {
 	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt;
 	letter-spacing: 3px;
-	color: #a9e0f9;
-}
-
-/*background for main nav and sub nav*/
-#buddypress div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a {
-	background: #a9e0f9;
 	color: #234d68;
 }
 
+
+
 /*Space between main nav and sub nav*/
 #buddypress div.item-list-tabs#subnav {
-	margin-top: 30px;
-
+	margin: 30px 0;
 }
 
-
-#subnav {
-	max-width: 615px;
-}
 /*subnav background*/
 div#subnav ul li {
 	background: #234d68;
@@ -108,7 +108,56 @@ input[type="text"] {
 	box-shadow: none;
 }
 
+/*Basic message to user settings*/
 #buddypress div#message p {
 	background: rgb(255,255,255);
 	color: #234d68;
+	border: 2px solid #234d68;
+}
+
+/*basic label styling*/
+label {
+	font-size: 12pt;
+	font-family: MyriadPro-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Styling fot a checkbox form label*/
+div.checkbox span.label {
+	background: #fff;
+	color: #4d4d4d;
+	text-align: left;
+	padding-left: 0;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: MyriadPro-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Label for Checkbox items*/
+#buddypress .standard-form div.checkbox label {
+	font-size: 12pt;
+}
+
+/*Save Changes button in edit profile*/
+div#buddypress input#profile-group-edit-submit {
+	width: 200px;
+	float: left;
+}
+
+/*Change table label styling*/
+div#buddypress div#item-body tr td.label {
+	font-size: 12pt;
+	vertical-align: center;
+	background: #fff;
+	color: #4d4d4d;
+	padding: 20px 0;
+}
+
+/*remove default table border*/
+table.profile-fields {
+	border: none;
+}
+
+/*Change link color*/
+a {
+	color: #3c718e;
 }
