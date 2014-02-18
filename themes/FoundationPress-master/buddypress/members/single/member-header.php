@@ -20,9 +20,10 @@
 </div><!-- #item-header-avatar -->
 
 <div id="item-header-content">
-	<div>
+	<!-- Enable to display username by avatar if the activity is not active -->
+	<!-- <div>
 		<h2><?php bp_displayed_user_fullname() ; ?></h2>
-	</div>
+	</div> -->
 
 
 	<?php if ( bp_is_active( 'activity' ) && bp_activity_do_mentions() ) : ?>

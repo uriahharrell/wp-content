@@ -9,7 +9,7 @@ class BP_EM_Component extends BP_Component {
 	
 	function __construct() {
 		global $bp;
-		parent::start('events',	__('Events', 'dbem'), EM_DIR);
+		parent::start('events',	__('Event', 'dbem'), EM_DIR);
 		$this->includes();
 		//TODO make BP component optional
 		$bp->active_components[$this->id] = '1';
@@ -78,7 +78,7 @@ class BP_EM_Component extends BP_Component {
 		}
 		/* Add 'Events' to the main user profile navigation */
 		$main_nav = array(
-			'name' => __( 'Events', 'dbem' ),
+			'name' => __( 'Games', 'dbem' ),
 			'slug' => em_bp_get_slug(),
 			'position' => 80,
 			'screen_function' => 'bp_em_events',
@@ -98,7 +98,7 @@ class BP_EM_Component extends BP_Component {
 		);
 		
 		$sub_nav[] = array(
-			'name' => __( 'Events I\'m Attending', 'dbem' ),
+			'name' => __( 'Games I\'m Attending', 'dbem' ),
 			'slug' => 'attending',
 			'parent_slug' => em_bp_get_slug(),
 			'parent_url' => $em_link,
@@ -109,7 +109,7 @@ class BP_EM_Component extends BP_Component {
 	
 		if( $can_manage_events ){
 			$sub_nav[] = array(
-				'name' => __( 'My Events', 'dbem' ),
+				'name' => __( 'My Games', 'dbem' ),
 				'slug' => 'my-events',
 				'parent_slug' => em_bp_get_slug(),
 				'parent_url' => $em_link,
@@ -133,7 +133,7 @@ class BP_EM_Component extends BP_Component {
 		
 		if( $can_manage_bookings && get_option('dbem_rsvp_enabled') ){
 			$sub_nav[] = array(
-				'name' => __( 'My Event Bookings', 'dbem' ),
+				'name' => __( 'My Scheduled Games', 'dbem' ),
 				'slug' => 'my-bookings',
 				'parent_slug' => em_bp_get_slug(),
 				'parent_url' => $em_link,
@@ -146,7 +146,7 @@ class BP_EM_Component extends BP_Component {
 		if( bp_is_active('groups') ){
 			/* Create Profile Group Sub-Nav */
 			$sub_nav[] = array(
-				'name' => __( 'Events', 'dbem' ),
+				'name' => __( 'Games', 'dbem' ),
 				'slug' => 'group-events',
 				'parent_slug' => bp_get_groups_slug(),
 				'parent_url' =>trailingslashit( bp_loggedin_user_domain() . bp_get_groups_slug() ),

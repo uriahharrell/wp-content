@@ -9,7 +9,7 @@
 }
 
 /*apply default font of MyriadPro-Light to the page*/
-h1, h2, .find-btn, .create-btn, .howitworks p {
+h1.headline, h2.subheadline, .find-btn, .create-btn, .howitworks p {
 font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -25,7 +25,7 @@ font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*Headline Text*/
-h1 {
+h1.headline {
 	font-size: 40pt;
 	letter-spacing: 4px;
 	color: #a9e0f9;
@@ -33,7 +33,7 @@ h1 {
 }
 
 /*Sub-headline Text*/
-h2 {
+h2.subheadline {
 	font-size: 16pt;
 	letter-spacing: 3px;
 	color: #a9e0f9;
@@ -124,58 +124,59 @@ h2 {
 /*maintain one line for the heading as the screen shrinks in mobile*/
 
 @media (min-width: 1px) and (max-width: 640px) {
-	h1 {
+	h1.headline {
 		padding-bottom: 15px;
 	}
 
-	h2 {
+	h2.subheadline {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
 }
+
 @media (min-width: 1px) and (max-width: 631px) {
-	h1 {
-		
+	h1.headline {
 		font-size: 36pt;
 	}
 }
 
 @media (min-width: 1px) and (max-width: 573px) {
-	h1 {
+	h1.headline {
 		font-size: 32pt;
 	}
 }
 
 @media (min-width: 1px) and (max-width: 526px) {
-	h1 {
+	h1.headline {
 		font-family: MyriadPro-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 24pt;
 	}
+}
 
 @media (min-width: 1px) and (max-width: 463px) {
-	h1 {
+	h1.headline {
 		font-size: 22pt;
 	}
 }
 
 @media (min-width: 1px) and (max-width: 434px) {
-	h1 {
+	h1.headline {
 		font-size: 19pt;
 	}
 }
 
 @media (min-width: 1px) and (max-width: 390px) {
-	h1 {
+	h1.headline {
 		font-size: 16pt;
 	}
 }
 
 @media (min-width: 1px) and (max-width: 351px) {
-	h1 {
+	h1.headline {
 		font-size: 14pt;
 	}
 
-	h2 {
+	h2.subheadline {
 		font-size: 14pt;
 	}
 
@@ -186,23 +187,31 @@ h2 {
 
 /*bring up the headline text for medium-small devices*/
 @media (min-width: 641px) and (max-width: 875px) {
-		h1 {
+		h1.headline {
 			margin-top: 100px;
-		}
-
-		
+		}	
 }
 
 /*styling for small devices*/
 @media (min-width: 1px) and (max-width: 640px) {
-	/*Center the headlines and bring closer to header*/
-	h1 {
-		margin-top: 50px;
-		text-align: center;
-		border-bottom: 2px solid #a9e0f9;
+	/*Remove bg min-height for small screens*/
+	.homepage {
+		min-height: 0px;
 	}
 
-	h2 {
+	/*Add margin below btn box equal to the marging between headline and nav*/
+	.btn-box {
+		margin-bottom: 50px;
+	}
+
+	/*Center the headlines and bring closer to header*/
+	h1.headline {
+		margin-top: 50px;
+		text-align: center;
+		border-bottom: 1px solid #a9e0f9;
+	}
+
+	h2.subheadline {
 		text-align: center;
 	}
 
@@ -230,12 +239,12 @@ h2 {
 }
 
 @media (min-width: 641px) and (max-width: 875px) {
-	h1 {
+	h1.headline {
 		margin-top: 110px;
 		text-align: center;
 	}
 
-	h2 {
+	h2.subheadline {
 		text-align: center;
 	}
 
@@ -249,13 +258,13 @@ h2 {
 
 /*fix break in header and subheader text by resizing text*/
 @media (min-width: 1px) and (max-width: 572px) {
-	h1 {
+	h1.headline {
 		line-height: normal;
 		padding-bottom: 15px;
 		border-bottom: 2px solid #A9E0f9;
 	}
 
-	h2 {
+	h2.subheadline {
 		margin-top: 16px;
 		margin-bottom: 20px;
 	}

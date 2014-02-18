@@ -5,9 +5,9 @@
 
 	<!-- container for the  headline, sub-headline, find your match btn, and create your match btn-->
 	<div class="row relative">
-		<h1>MAKE GAMES HAPPEN</h1>
+		<h1 class="headline">MAKE GAMES HAPPEN</h1>
 
-		<h2>Find the perfect match or create your own.</h2>
+		<h2 class="subheadline">Find the perfect match or create your own.</h2>
 
 		<div class="wrap columns btn-box">
 			<a class="columns find-btn" href="#">FIND YOUR MATCH</a>

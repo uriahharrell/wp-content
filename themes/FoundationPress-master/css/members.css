@@ -9,27 +9,31 @@
 	border: solid 4px #234d68;
 }
 
-/*Navigation background*/
-div#object-nav ul li {
-	background: #234d68;
+/*Navigation background and right border*/
+div#object-nav ul li, div#subnav ul li {
+	background: #FFF;
+	border-right: 1px solid #234d68;
+}
+
+div#object-nav ul li:last-child, div#subnav ul li:last-child {
+	border-right: none;
 }
 
 /*Navigation styling*/
-div#buddypress div#item-nav ul li a {
-	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14pt;
-	letter-spacing: 3px;
-	color: #a9e0f9;
-}
-
-/*background for main nav and sub nav*/
-#buddypress #item-nav div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a {
-	background: #a9e0f9;
+div#buddypress div#object-nav ul li a, div#buddypress div#subnav ul li a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
 	color: #234d68;
 }
 
+/*background for main nav and sub nav*/
+div#buddypress div#object-nav ul li.selected a, div#buddypress div#subnav ul li.selected a  {
+	background: #a9e0f9;
+}
+
 /*Name beside profile picture*/
-h2 {
+h2.user-nicename {
 	font-size: 20pt;
 	color: #234d68;
 
@@ -48,16 +52,6 @@ div span.activity {
 /*Space between main nav and sub nav*/
 #buddypress div.item-list-tabs#subnav {
 	margin: 30px 0;
-}
-
-/*subnav background*/
-div#subnav ul li {
-	background: #234d68;
-}
-
-/*subnav text color*/
-div#subnav ul li a {
-	color: #a9e0f9;
 }
 
 #search-message-form {
@@ -135,6 +129,7 @@ div.checkbox span.label {
 /*Label for Checkbox items*/
 #buddypress .standard-form div.checkbox label {
 	font-size: 12pt;
+
 }
 
 /*Save Changes button in edit profile*/
@@ -150,6 +145,7 @@ div#buddypress div#item-body tr td.label {
 	background: #fff;
 	color: #4d4d4d;
 	padding: 20px 0;
+	border: none;
 }
 
 /*remove default table border*/
