@@ -10,9 +10,9 @@ function em_bookings_events_table() {
 	global $EM_Event;
 
 	$scope_names = array (
-		'past' => __ ( 'Past events', 'dbem' ),
-		'all' => __ ( 'All events', 'dbem' ),
-		'future' => __ ( 'Future events', 'dbem' )
+		'past' => __ ( 'Past Games', 'dbem' ),
+		'all' => __ ( 'All Games', 'dbem' ),
+		'future' => __ ( 'Future Games', 'dbem' )
 	);
 	
 	$action_scope = ( !empty($_REQUEST['em_obj']) && $_REQUEST['em_obj'] == 'em_bookings_events_table' );
@@ -26,13 +26,13 @@ function em_bookings_events_table() {
 	// No action, only showing the events list
 	switch ($scope) {
 		case "past" :
-			$title = __ ( 'Past Events', 'dbem' );
+			$title = __ ( 'Past Games', 'dbem' );
 			break;
 		case "all" :
-			$title = __ ( 'All Events', 'dbem' );
+			$title = __ ( 'All Games', 'dbem' );
 			break;
 		default :
-			$title = __ ( 'Future Events', 'dbem' );
+			$title = __ ( 'Future Games', 'dbem' );
 			$scope = "future";
 	}
 	$owner = !current_user_can('manage_others_bookings') ? get_current_user_id() : false;
@@ -84,14 +84,14 @@ function em_bookings_events_table() {
 			<?php
 			if (empty ( $events )) {
 				// TODO localize
-				_e ( 'no events','dbem' );
+				_e ( 'No games','dbem' );
 			} else {
 			?>
 			<div class='table-wrap'>	
 			<table class="widefat">
 				<thead>
 					<tr>
-						<th><?php esc_html_e( 'Event', 'dbem' ); ?></th>
+						<th><?php esc_html_e( 'Game', 'dbem' ); ?></th>
 						<th><?php esc_html_e( 'Date and time', 'dbem' ); ?></th>
 					</tr>
 				</thead>

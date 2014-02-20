@@ -58,12 +58,12 @@ function em_bookings_dashboard(){
 			<br/>
 		</div>
   		<h2>
-  			<?php esc_html_e('Event Bookings Dashboard', 'dbem'); ?>
+  			<?php esc_html_e('Game sign-up Dashboard', 'dbem'); ?>
   		</h2>
   		<?php else: echo $EM_Notices; ?>
   		<?php endif; ?>
   		<div class="em-bookings-recent">
-			<h2><?php esc_html_e('Recent Bookings','dbem'); ?></h2>	
+			<h2><?php esc_html_e('Recent Games','dbem'); ?></h2>	
 	  		<?php
 			$EM_Bookings_Table = new EM_Bookings_Table();
 			$EM_Bookings_Table->status = get_option('dbem_bookings_approval') ? 'needs-attention':'confirmed';
@@ -72,7 +72,7 @@ function em_bookings_dashboard(){
   		</div>
   		<br class="clear" />
   		<div class="em-bookings-events">
-			<h2><?php esc_html_e('Events With Bookings Enabled','dbem'); ?></h2>		
+			<h2><?php esc_html_e('Games With Sign-Up Enabled','dbem'); ?></h2>		
 			<?php em_bookings_events_table(); ?>
 			<?php do_action('em_bookings_dashboard'); ?>
 		</div>

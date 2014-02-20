@@ -29,7 +29,7 @@ function bp_em_my_events() {
 }
 
 function bp_em_my_events_title() {
-	_e( 'My Events', 'dbem' );
+	_e( 'My Games', 'dbem' );
 }
 
 /**
@@ -44,12 +44,12 @@ function bp_em_my_events_editor_title() {
 	global $EM_Event;
 	if( is_object($EM_Event) ){
 		if($EM_Event->is_recurring()){
-			echo __( "Reschedule Events", 'dbem' )." '{$EM_Event->event_name}'";
+			echo __( "Reschedule Game", 'dbem' )." '{$EM_Event->event_name}'";
 		}else{
-			echo __( "Edit Event", 'dbem' ) . " '" . $EM_Event->event_name . "'";
+			echo __( "Edit Games", 'dbem' ) . " '" . $EM_Event->event_name . "'";
 		}
 	}else{
-		_e( 'Add Event', 'dbem' );
+		_e( 'Add Games', 'dbem' );
 	}
 }
 ?>

@@ -43,7 +43,7 @@ function bp_em_record_activity_event_save( $result, $EM_Event ){
 		if( empty($EM_Event->group_id) ){
 			bp_em_record_activity( array(
 				'user_id' => $user->ID,
-				'action' => sprintf(__('%s added the event %s','dbem'), "<a href='".$member_link."'>".$user->display_name."</a>", $EM_Event->output('#_EVENTLINK') ),
+				'action' => sprintf(__('%s added the games %s','dbem'), "<a href='".$member_link."'>".$user->display_name."</a>", $EM_Event->output('#_EVENTLINK') ),
 				'primary_link' => $EM_Event->output('#_EVENTURL'),
 				'type' => 'new_event',
 				'item_id' => $EM_Event->event_id,
@@ -54,7 +54,7 @@ function bp_em_record_activity_event_save( $result, $EM_Event ){
 			$group = new BP_Groups_Group($EM_Event->group_id);
 			bp_em_record_activity( array(
 				'user_id' => $user->ID,
-				'action' => sprintf(__('%s added the event %s to %s.','dbem'), "<a href='".$member_link."'>".$user->display_name."</a>", $EM_Event->output('#_EVENTLINK'), '<a href="'.bp_get_group_permalink($group).'">'.bp_get_group_name($group).'</a>' ),
+				'action' => sprintf(__('%s added the games %s to %s.','dbem'), "<a href='".$member_link."'>".$user->display_name."</a>", $EM_Event->output('#_EVENTLINK'), '<a href="'.bp_get_group_permalink($group).'">'.bp_get_group_name($group).'</a>' ),
 				'component' => 'groups',
 				'type' => 'new_event',
 				'item_id' => $EM_Event->group_id,
@@ -82,17 +82,17 @@ function bp_em_record_activity_booking_save( $result, $EM_Booking ){
 		$EM_Event = $EM_Booking->get_event();
 		if( empty($EM_Event->group_id) ){
 			if( $status == 1 || (!get_option('dbem_bookings_approval') && $status < 2) ){
-				$action = sprintf(__('%s is attending %s.','dbem'), $user_link, $event_link );
+				$action = sprintf(__('%s is playing %s.','dbem'), $user_link, $event_link );
 			}elseif( ($EM_Booking->previous_status == 1 || (!get_option('dbem_bookings_approval') && $EM_Booking->previous_status < 2)) && in_array($status, $rejected_statuses) ){
-				$action = sprintf(__('%s will not be attending %s anymore.','dbem'), $user_link, $event_link );
+				$action = sprintf(__('%s will not be playing %s anymore.','dbem'), $user_link, $event_link );
 			}
 		}else{
 			$group = new BP_Groups_Group($EM_Event->group_id);
 			$group_link = '<a href="'.bp_get_group_permalink($group).'">'.bp_get_group_name($group).'</a>';
 			if( $status == 1 || (!get_option('dbem_bookings_approval') && $status < 2) ){
-				$action = sprintf(__('%s is attending %s of the group %s.','dbem'), $user_link, $event_link, $group_link );
+				$action = sprintf(__('%s is playing %s of the group %s.','dbem'), $user_link, $event_link, $group_link );
 			}elseif( ($EM_Booking->previous_status == 1 || (!get_option('dbem_bookings_approval') && $EM_Booking->previous_status < 2)) && in_array($status, $rejected_statuses) ){
-				$action = sprintf(__('%s will not be attending %s of group %s anymore.','dbem'), $user_link, $event_link, $group_link );
+				$action = sprintf(__('%s will not be playing %s of group %s anymore.','dbem'), $user_link, $event_link, $group_link );
 			}
 		}
 		if( !empty($action) ){

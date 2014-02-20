@@ -1,0 +1,15 @@
+/*Change Avatar tab---------------------------------------------------------------------------------------------*/
+
+/*Upload Image btn for Avatar*/
+p#avatar-upload input#upload {
+	float: left;
+	width: 300px;
+}
+
+/*Crop Image btn for Avatar*/
+div#buddypress div#item-body input#avatar-crop-submit {
+	width: 200px;
+	float: left;
+	margin-top: 30px;
+}
+

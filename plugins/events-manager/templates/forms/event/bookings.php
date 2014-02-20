@@ -4,7 +4,7 @@ global $EM_Event, $post, $allowedposttags, $EM_Ticket, $col_count;
 <div id="event-rsvp-box">
 	<input id="event-rsvp" name='event_rsvp' value='1' type='checkbox' <?php echo ($EM_Event->event_rsvp) ? 'checked="checked"' : ''; ?> />
 	&nbsp;&nbsp;
-	<?php _e ( 'Enable registration for this event', 'dbem' )?>
+	<?php _e ( 'Enable sign-up for this game', 'dbem' )?>
 </div>
 <div id="event-rsvp-options" style="<?php echo ($EM_Event->event_rsvp) ? '':'display:none;' ?>">
 	<?php do_action('em_events_admin_bookings_header', $EM_Event); ?>

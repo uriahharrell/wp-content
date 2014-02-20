@@ -9,7 +9,7 @@ class BP_EM_Component extends BP_Component {
 	
 	function __construct() {
 		global $bp;
-		parent::start('events',	__('Event', 'dbem'), EM_DIR);
+		parent::start('events',	__('Game', 'dbem'), EM_DIR);
 		$this->includes();
 		//TODO make BP component optional
 		$bp->active_components[$this->id] = '1';
@@ -50,7 +50,7 @@ class BP_EM_Component extends BP_Component {
 			'slug'                  => BP_EM_SLUG,
 			'has_directory'         => false, //already done by EM
 			'notification_callback' => 'bp_em_format_notifications',
-			'search_string'         => sprintf(__( 'Search %s...', 'dbem' ),__('Events','dbem')),
+			'search_string'         => sprintf(__( 'Search %s...', 'dbem' ),__('Games','dbem')),
 		);
 
 		// Let BP_Component::setup_globals() do its work.
@@ -189,7 +189,7 @@ class BP_EM_Component extends BP_Component {
 			$wp_admin_nav[] = array(
 				'parent' => $bp->my_account_menu_id,
 				'id'     => 'my-em-' . $this->id,
-				'title'  => __( 'Events', 'dbem' ),
+				'title'  => __( 'Games', 'dbem' ),
 				'href'   => $em_link
 			);
 			
@@ -204,7 +204,7 @@ class BP_EM_Component extends BP_Component {
 			$wp_admin_nav[] = array(
 				'parent' => 'my-em-' . $this->id,
 				'id'     => 'my-em-' . $this->id .'-attending',
-				'title'  => __( 'Events I\'m Attending', 'dbem' ),
+				'title'  => __( 'Games I\'m Attending', 'dbem' ),
 				'href'   => $em_link.'attending/'
 			);
 			
@@ -212,7 +212,7 @@ class BP_EM_Component extends BP_Component {
 				$wp_admin_nav[] = array(
 					'parent' => 'my-em-' . $this->id,
 					'id'     => 'my-em-' . $this->id .'-my-events',
-					'title'  => __( 'My Events', 'dbem' ),
+					'title'  => __( 'My Games', 'dbem' ),
 					'href'   => $em_link.'my-events/'
 				);
 			}
@@ -230,7 +230,7 @@ class BP_EM_Component extends BP_Component {
 				$wp_admin_nav[] = array(
 					'parent' => 'my-em-' . $this->id,
 					'id'     => 'my-em-' . $this->id .'-my-bookings',
-					'title'  => __( 'My Event Bookings', 'dbem' ),
+					'title'  => __( 'My Schedules Games', 'dbem' ),
 					'href'   => $em_link.'my-bookings/'
 				);
 			}
@@ -240,7 +240,7 @@ class BP_EM_Component extends BP_Component {
 				$wp_admin_nav[] = array(
 					'parent' => 'my-account-groups',
 					'id'     => 'my-account-groups-' . $this->id ,
-					'title'  => __( 'Events', 'dbem' ),
+					'title'  => __( 'Games', 'dbem' ),
 					'href'   => trailingslashit( bp_loggedin_user_domain() . bp_get_groups_slug() ) . 'group-events/'
 				);
 			}			
@@ -262,7 +262,7 @@ class BP_EM_Component extends BP_Component {
 				if( empty($count) ) $count = 0;
 			}
 			bp_core_new_subnav_item( array( 
-				'name' => __( 'Events', 'dbem' ) . " <span>$count</span>",
+				'name' => __( 'Games', 'dbem' ) . " <span>$count</span>",
 				'slug' => 'events', 
 				'parent_url' => $group_link, 
 				'parent_slug' => $bp->groups->current_group->slug,

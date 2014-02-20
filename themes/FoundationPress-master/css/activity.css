@@ -1,0 +1,16 @@
+/*Personal Section------------------------------------------------------------------------------------------------------*/
+li#activity-filter-select.last label {
+	padding: 0 10px;
+}
+
+/*Change height of Post-Update option bar*/
+div#buddypress div#item-body div#whats-new-options {
+	height: 60px;
+}
+
+/*Post Update btn styling*/
+div#whats-new-submit input#aw-whats-new-submit {
+	font-size: 12pt;
+	width: 150px;
+	height: 40px;
+}
