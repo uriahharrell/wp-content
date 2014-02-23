@@ -19,7 +19,7 @@ global $col_count, $EM_Ticket;
 		<div class="ticket-price"><label><?php _e('Price','dbem') ?></label><input type="text" name="em_tickets[<?php echo $col_count; ?>][ticket_price]" class="ticket_price" value="<?php echo esc_attr($EM_Ticket->ticket_price) ?>" /></div>
 		<div class="ticket-spaces">
 			<label title="<?php __('Enter a maximum number of spaces (required).','dbem'); ?>"><?php _e('Spaces','dbem') ?></label>
-			<input type="text" name="em_tickets[<?php echo $col_count; ?>][ticket_spaces]" value="<?php echo esc_attr($EM_Ticket->ticket_spaces) ?>" class="ticket_spaces" />
+			<input type="text" name="em_tickets[<?php echo $col_count; ?>][ticket_spaces]" value="1" class="ticket_spaces" />
 		</div>
 	</div>
 	<div class="em-ticket-form-advanced" style="display:none;">

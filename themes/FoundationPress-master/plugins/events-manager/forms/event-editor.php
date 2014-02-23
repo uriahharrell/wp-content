@@ -40,14 +40,16 @@ if( !empty($_REQUEST['success']) ){
 				<?php do_action('em_font_event_form_guest'); ?>
 			</div>
 		<?php endif; ?>
-		<h3 class="event-form-name"><?php esc_html_e( 'Event Name', 'dbem' ); ?></h3>
+
+		<!-- Match Name Section -->
+		<h3 class="event-form-name"><?php esc_html_e( 'Match Name', 'dbem' ); ?></h3>
 		<div class="inside event-form-name">
 			<input type="text" name="event_name" id="event-name" value="<?php echo esc_attr($EM_Event->event_name,ENT_QUOTES); ?>" /><?php echo $required; ?>
 			<br />
-			<?php esc_html_e('The event name. Example: Birthday party', 'dbem'); ?>
 			<?php em_locate_template('forms/event/group.php',true); ?>
 		</div>
-					
+		
+		<!-- When Section -->
 		<h3 class="event-form-when"><?php esc_html_e( 'When', 'dbem' ); ?></h3>
 		<div class="inside event-form-when">
 		<?php 
@@ -61,13 +63,15 @@ if( !empty($_REQUEST['success']) ){
 		?>
 		</div>
 
+		<!-- Where Section -->
 		<?php if( get_option('dbem_locations_enabled') ): ?>
-		<h3 class="event-form-where"><?php esc_html_e( 'Where', 'dbem' ); ?></h3>
+		<h3 class="event-form-where small-12"><?php esc_html_e( 'Where', 'dbem' ); ?></h3>
 		<div class="inside event-form-where">
 		<?php em_locate_template('forms/event/location.php',true); ?>
 		</div>
 		<?php endif; ?>
 		
+		<!-- Details Section -->
 		<h3 class="event-form-details"><?php esc_html_e( 'Details', 'dbem' ); ?></h3>
 		<div class="inside event-form-details">
 			<div class="event-editor">
@@ -76,7 +80,7 @@ if( !empty($_REQUEST['success']) ){
 				<?php else: ?>
 					<textarea name="content" rows="10" style="width:100%"><?php echo $EM_Event->post_content ?></textarea>
 					<br />
-					<?php esc_html_e( 'Details about the event.', 'dbem' )?> <?php esc_html_e( 'HTML allowed.', 'dbem' )?>
+					
 				<?php endif; ?>
 			</div>
 			<div class="event-extra-details">
@@ -85,6 +89,7 @@ if( !empty($_REQUEST['success']) ){
 			</div>
 		</div>
 		
+		<!-- Image Section -->
 		<?php if( $EM_Event->can_manage('upload_event_images','upload_event_images') ): ?>
 		<h3><?php esc_html_e( 'Event Image', 'dbem' ); ?></h3>
 		<div class="inside event-form-image">
@@ -94,11 +99,13 @@ if( !empty($_REQUEST['success']) ){
 		
 		<?php if( get_option('dbem_rsvp_enabled') && $EM_Event->can_manage('manage_bookings','manage_others_bookings') ) : ?>
 		<!-- START Bookings -->
-		<h3><?php esc_html_e('Bookings/Registration','dbem'); ?></h3>
-		<div class="inside event-form-bookings">				
-			<?php em_locate_template('forms/event/bookings.php',true); ?>
+		<div class="hidden">
+			<h3><?php esc_html_e('Bookings/Registration','dbem'); ?></h3>
+			<div class="inside event-form-bookings">				
+				<?php em_locate_template('forms/event/bookings.php',true); ?>
+			</div>
+			<!-- END Bookings -->
 		</div>
-		<!-- END Bookings -->
 		<?php endif; ?>
 		
 		<?php do_action('em_front_event_form_footer'); ?>

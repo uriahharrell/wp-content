@@ -1,0 +1,25 @@
+/*Styling for the Games tab in the internal main nav-------------------------------------------------------------------*/
+
+
+/*Add new game section-------------------------------------------------------------------------------------------------*/
+/*Category selection*/
+form#event-form div.event-categories select {
+	height: 60px;
+}
+
+/*When Section---------------------------------------------------------------------------------------------------------*/
+/*Height of When Container*/
+#buddypress #item-body div.event-form-when {
+	height: 150px;
+}
+
+/*Space above text inputs*/
+#buddypress #item-body div#em-form-when input {
+	margin-top: 8px;
+	width: 150px;
+}
+
+/*hides the ticketing information so that the user cannot alter it*/
+#buddypress #item-body div.hidden {
+	display: none;
+}

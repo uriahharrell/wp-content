@@ -7,6 +7,9 @@
  * To ensure compatability, it is recommended you maintain class, id and form name attributes, unless you now what you're doing. 
  * You also have an $args array available to you with search options passed on by your EM settings or shortcode
  */
+
+
+
 $args = !empty($args) ? $args:array(); /* @var $args array */
 ?>
 <div class="em-search-wrapper">
@@ -63,3 +66,4 @@ $args = !empty($args) ? $args:array(); /* @var $args array */
 </div>
 <?php if( !empty($args['ajax']) ): ?><div class='em-search-ajax'></div><?php endif; ?>
 </div>
+

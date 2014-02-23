@@ -24,6 +24,8 @@
 	<!-- <div>
 		<h2><?php bp_displayed_user_fullname() ; ?></h2>
 	</div> -->
+	
+
 
 	<?php if ( bp_is_active( 'activity' ) && bp_activity_do_mentions() ) : ?>
 		<h2 class="user-nicename">@<?php bp_displayed_user_mentionname(); ?></h2>

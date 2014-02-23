@@ -1,3 +1,5 @@
+
+
 <?php
 /*
  * Default Events List Template
@@ -8,6 +10,8 @@
  * $args - the args passed onto EM_Events::output()
  * 
  */
+
+
 $args = apply_filters('em_content_events_args', $args);
 
 if( get_option('dbem_css_evlist') ) echo "<div class='css-events-list'>";
