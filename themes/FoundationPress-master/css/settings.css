@@ -1,0 +1,25 @@
+/*Settings tab in internal main nav---------------------------------------------------------------------------------*/
+
+/*General tab settings----------------------------------------------------------------------------------------------*/
+/*75% width for change password text input, margin between text input and label*/
+#buddypress #item-body #pass1, #buddypress #item-body #pass2 {
+	margin-bottom: 6px;
+	width: 75%;
+}
+
+/*Space between new password and repeat new password entry areas*/
+#buddypress #item-body #pass2 {
+ 	margin-top: 20px;
+}
+
+/*More margin above save changes btn*/
+#buddypress #item-body #submit {
+	margin-top: 5px;
+}
+
+/*Email tab settings------------------------------------------------------------------------------------------------*/
+
+/*Give all the tables the same width*/
+#buddypress #item-body #settings-form table {
+	width: 60%;
+}

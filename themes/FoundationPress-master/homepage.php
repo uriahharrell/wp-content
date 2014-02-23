@@ -11,7 +11,12 @@
 
 		<div class="wrap columns btn-box">
 			<a class="columns find-btn" href="#">FIND YOUR MATCH</a>
-			<a class="columns create-btn " href="#">CREATE YOUR MATCH</a>
+			<!-- If the user is not logged in, the create your match button will take you too the registration page -->
+			<?php if (get_option('users_can_register')) : ?>
+			<a class="columns create-btn" href="<?php bloginfo('wpurl'); ?>/wp-login.php?action=register"><?php _e('CREATE YOUR OWN') ?></a>
+			<?php endif; ?>
+			
+			
 		</div>
 		
 	</div>

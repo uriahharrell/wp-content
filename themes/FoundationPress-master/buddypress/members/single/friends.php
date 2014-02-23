@@ -9,6 +9,7 @@
 
 ?>
 
+
 <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
 	<ul>
 		<?php if ( bp_is_my_profile() ) bp_get_options_nav(); ?>
@@ -32,6 +33,12 @@
 
 	</ul>
 </div>
+
+
+	<div class="find-friends generic-button">
+		<a class="find-friends-btn " href="<?php bloginfo('template_directory'); ?>/members">Find More Friends Here!</a>
+	</div>
+
 
 <?php
 switch ( bp_current_action() ) :

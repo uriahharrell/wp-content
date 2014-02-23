@@ -1,14 +1,17 @@
+/*Default settings for the entire internal (non-homepage) part of the site---------------------------------------------*/
+/*Default fonts*/
 div#buddypress {
-	font-family: MyriadPro-regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16pt;
-	letter-spacing: 3px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12pt;
 }
 
+/*White background on internal pages*/
 div.bg-grey {
 	background: #fff;
 	padding: 30px;
 	
 }
+
 
 .internal-body {
 	width: 100%;
@@ -24,3 +27,53 @@ div.bg-grey {
 	
 }
 
+/*Basic message to user settings*/
+#buddypress div#message p {
+	background: rgb(255,255,255);
+	color: #4d4d4d;
+	border: 2px solid #8d8d8d;
+}
+
+/*basic label styling*/
+label {
+	font-size: 12pt;
+	font-family: MyriadPro-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Styling font for a checkbox form label*/
+div.checkbox span.label {
+	background: #fff;
+	color: #4d4d4d;
+	text-align: left;
+	padding-left: 0;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Label for Checkbox items*/
+#buddypress .standard-form div.checkbox label {
+	font-size: 12pt;
+
+}
+
+
+/*Change table label styling*/
+div#buddypress div#item-body tr td.label {
+	font-size: 12pt;
+	vertical-align: center;
+	background: #fff;
+	color: #4d4d4d;
+	padding: 20px 0;
+	border: none;
+}
+
+/*remove default table border*/
+table.profile-fields {
+	border: none;
+}
+
+/*Change link color*/
+a {
+	color: #3c718e;
+}

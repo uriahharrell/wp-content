@@ -1,0 +1,48 @@
+/*Search messages btn*/
+#buddypress div.message-search {
+	float: left;
+}
+
+div#buddypress div#item-body form#search-message-form {
+	width: 280px;
+}
+
+div#buddypress div#item-body form#search-message-form input#messages_search {
+	float: left;
+	width: 200px;
+	height: 29px;
+	padding: 2px 6px;
+
+}
+
+div#buddypress div#item-body form#search-message-form input#messages_search_submit {
+	float: right;
+	width: 80px;
+	height: 29px;
+}
+
+/*Delete Selected txt, selection box, and btn container*/
+div#buddypress div#item-body div.messages-options-nav {
+	background: #FFF;
+	margin-top: 30px;
+	text-align: left;
+}
+
+/*Delete selected selection box*/
+div#buddypress div#item-body select#message-type-select {
+	width: 20%;
+	height: 29px;
+
+}
+
+/*Delete Selected btn*/
+div#buddypress div#item-body #delete_inbox_messages {
+	width: 20%;
+	height: 29px;
+	padding: 4px 10px;
+	color: #777;
+	border: 1px solid #ccc;
+	
+}
+
+

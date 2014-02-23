@@ -1,0 +1,26 @@
+/*Styling for the Friends tab in the internal main nav*/
+
+/*Find Friends btn below the subnav*/
+#buddypress #item-body div.find-friends {
+	margin-bottom: 30px;
+	
+}
+
+/*Order By label and select container*/
+#buddypress #item-body #members-order-select {
+	width: 200px;
+}
+
+/*Order By label*/
+#buddypress #item-body #members-order-select label {
+	float: left;
+	width: 80px;
+}
+
+/*Order By select*/
+#buddypress #item-body #members-order-select select {
+	float: right;
+	width: 120px;
+	height: 29px;
+	padding: 2px;
+}

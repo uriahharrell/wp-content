@@ -27,7 +27,7 @@
 			</ul>
 		</div><!-- .item-list-tabs -->
 
-		<div class="small-4 columns item-list-tabs" id="subnav" role="navigation">
+		<div class="columns item-list-tabs" id="subnav" role="navigation">
 			<ul>
 				<?php do_action( 'bp_members_directory_member_sub_types' ); ?>
 

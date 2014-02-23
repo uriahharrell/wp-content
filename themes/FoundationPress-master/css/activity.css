@@ -1,3 +1,11 @@
+/*Subnav for the Activity Section---------------------------------------------------------------------------------------*/
+/*Change the margins and remove the border on the "Show" section for the activity stream*/
+div#buddypress div#item-body div#subnav ul li#activity-filter-select:last-child {
+	margin-top: 0;
+	margin-left: 20px;
+	border: none;
+}
+
 /*Personal Section------------------------------------------------------------------------------------------------------*/
 li#activity-filter-select.last label {
 	padding: 0 10px;
@@ -13,4 +21,55 @@ div#whats-new-submit input#aw-whats-new-submit {
 	font-size: 12pt;
 	width: 150px;
 	height: 40px;
+}
+
+/*Change max width of the activity subnav filter, float the label left and the select box right*/
+div#buddypress div#item-body li#activity-filter-select {
+	width: 200px;
+}
+
+div#buddypress div#item-body #activity-filter-select label {
+	float: left;
+	padding-right: 0;
+}
+
+div#buddypress div#item-body #activity-filter-select select {
+	float: right;
+	max-width: 125px;
+	padding: 2px;
+	height: 29px;
+	margin: -3px 0 0 0;
+}
+
+/*Activity stream styling------------------------------------------------------------------------------------------------*/
+/*Remove top padding so that there isn't an awkward border line just above the alternating colored li's*/
+div#buddypress div#item-body div.activity ul#activity-stream li {
+	padding-top: 0;
+}
+
+/*Make every other stream item a slightly different color*/
+div#buddypress div#item-body div.activity ul#activity-stream li:nth-child(even) {
+	background: #F1F1F1;
+}
+
+/*Add margin around the avatars in stream items*/
+div#buddypress div#item-body div.activity-avatar {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+/*Float the time stamp all the way to the right*/
+div#buddypress div#item-body span.time-since {
+	float: right;
+}
+
+/*align comment headers on the left and time stamps on the right*/
+div#buddypress div#item-body .activity-content .activity-header figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*Remove margin on the post update btn container*/
+div#buddypress div#item-body div#whats-new-submit {
+	margin-top: 0;
 }

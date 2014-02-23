@@ -6,6 +6,11 @@
 @import url('members.css');
 @import url('activity.css');
 @import url('profile.css');
+@import url('myprofile.css');
+@import url('notifications.css');
+@import url('messages.css');
+@import url('friends.css');
+@import url('settings.css');
 
 *,
 *:after,

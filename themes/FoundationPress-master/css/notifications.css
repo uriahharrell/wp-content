@@ -1,0 +1,26 @@
+/*Subnav for the notifications section------------------------------------------------------------------------------*/
+/*Change container styling for Order By form*/
+div#buddypress div#item-body li#members-order-select {
+	margin-top: 0;
+	margin-left: 30px;
+	width: 200px;
+	border: none;
+}
+
+/*Float the Order By label left*/
+div#buddypress div#item-body li#members-order-select form label {
+	float: left;
+}
+
+/*Float the Order by select box right and change styling*/
+div#buddypress div#item-body li#members-order-select form select {
+	float: right;
+	max-width: 120px;
+	height: 29px;
+	padding: 2px;
+}
+/*Unread and Read subnav tabs joint settings-------------------------------------------------------------------------*/
+/*Margin below the Notification table*/
+div#buddypress div#item-body table.notifications {
+	margin-bottom: 5px;
+}

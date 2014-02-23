@@ -1,0 +1,83 @@
+/*Styling for everything above the main navigation----------------------------------------------------------------------*/
+/*Avatar img*/
+#buddypress div#item-header img.avatar {
+	margin: 0 30px 30px 0;
+	border: solid 4px #234d68;
+}
+
+/*Name beside profile picture*/
+h2.user-nicename {
+	font-size: 20pt;
+	color: #234d68;
+
+}
+
+/*Last active text under name*/
+div span.activity {
+	font-size: 14pt;
+	color: #234d68;
+}
+
+/*Main and Sub navigation joint settings--------------------------------------------------------------------------------*/
+/*Set font settings for the main and sub navs*/
+div#buddypress div#object-nav ul li a, div#buddypress div#subnav ul li a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #234d68;
+}
+
+
+/*background for main nav and sub nav*/
+div#buddypress div#object-nav ul li.selected a, div#buddypress div#subnav ul li.selected a  {
+	background: #a9e0f9;
+}
+
+/*Space between main nav and sub nav*/
+#buddypress div.item-list-tabs#subnav {
+	margin: 30px 0;
+}
+
+/*Settings for numbers next to messages, notifications, and friends*/
+div#buddypress div#item-nav li a span {
+	font-size: 100%;
+}
+
+/*Main Navigation Styling-----------------------------------------------------------------------------------------------*/
+/*Navigation background and right border for main nav*/
+div#object-nav ul li {
+	background: #FFF;
+	border-right: 1px solid #DDD;
+}
+
+/*Remove the right border on the last item of the main nav*/
+div#object-nav ul li:last-child {
+	border-right: none;
+}
+
+/*Sub Navigation Styling------------------------------------------------------------------------------------------------*/
+/*Left border for the first item of the subnav*/
+div#subnav ul li:first-child {
+	border-left: 1px solid #DDD;
+}
+
+/*Top, bottom, and right borders for the subnav items*/
+div#subnav ul li {
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;;
+	border-right: 1px solid #DDD;
+}
+
+/*Change font color of the subnav*/
+div#buddypress div#subnav ul li a {
+	color: #4d4d4d;
+}
+
+
+
+
+
+
+#search-message-form {
+	width: 230px;
+}

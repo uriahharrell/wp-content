@@ -1,3 +1,5 @@
+/*Profile tab in the internal main nave-------------------------------------------------------------------------*/
+
 /*Change Avatar tab---------------------------------------------------------------------------------------------*/
 
 /*Upload Image btn for Avatar*/
@@ -12,4 +14,14 @@ div#buddypress div#item-body input#avatar-crop-submit {
 	float: left;
 	margin-top: 30px;
 }
+/*Save Changes button in edit profile*/
+div#buddypress input#profile-group-edit-submit {
+	width: 200px;
+	float: left;
+}
 
+/*Spacing below the upload image btn*/
+p#avatar-upload {
+	height: 100px;
+	margin-bottom: 0;
+}
