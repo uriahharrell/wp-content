@@ -22,7 +22,7 @@ nav.top-bar {
 	float: right;
 }
 
-/*Right Side Nave Links*/
+/*Right Side Nav Links*/
 .top-bar-section ul li a, .left-off-canvas-menu ul li a {
 	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt;
@@ -44,11 +44,12 @@ nav.tab-bar {
 
 .left-off-canvas-menu ul li {
 	list-style: none;
-	margin: 20px 0;
+	margin: 8px 0;
 }
 
 .left-off-canvas-menu ul li a {
 	font-size: 18pt;
+	margin-top: 10px;
 }
 
 .menu-icon-box {

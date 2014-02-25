@@ -64,8 +64,12 @@ div#buddypress div#item-body tr td.label {
 	vertical-align: center;
 	background: #fff;
 	color: #4d4d4d;
-	padding: 20px 0;
+	padding: 20px 0 20px 6px;
 	border: none;
+}
+
+div#buddypress div#item-body tr:nth-child(even) td.label, div#buddypress div#item-body tr:nth-child(even) td.data {
+	background: #fafafa;
 }
 
 /*remove default table border*/
@@ -76,4 +80,13 @@ table.profile-fields {
 /*Change link color*/
 a {
 	color: #3c718e;
+}
+
+/*General Styling for anything that is an internal headline*/
+.internal-headline {
+	background: #234d68;
+	color: #A9E0f9;
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	letter-spacing: 3px;
+	padding-left: 6px;
 }

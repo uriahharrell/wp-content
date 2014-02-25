@@ -9,7 +9,7 @@ global $EM_Event, $EM_Notices, $bp;
 //check that user can access this page
 if( is_object($EM_Event) && !$EM_Event->can_manage('edit_events','edit_others_events') ){
 	?>
-	<div class="wrap"><h2><?php esc_html_e('Unauthorized Access','dbem'); ?></h2><p><?php echo sprintf(__('You do not have the rights to manage this %s.','dbem'),__('Event','dbem')); ?></p></div>
+	<div class="wrap"><h2><?php esc_html_e('Unauthorized Access','dbem'); ?></h2><p><?php echo sprintf(__('You do not have the rights to manage this %s.','dbem'),__('Match','dbem')); ?></p></div>
 	<?php
 	return false;
 }elseif( !is_object($EM_Event) ){
@@ -42,7 +42,7 @@ if( !empty($_REQUEST['success']) ){
 		<?php endif; ?>
 
 		<!-- Match Name Section -->
-		<h3 class="event-form-name"><?php esc_html_e( 'Match Name', 'dbem' ); ?></h3>
+		<h3 class="event-form-name internal-headline"><?php esc_html_e( 'Match Name', 'dbem' ); ?></h3>
 		<div class="inside event-form-name">
 			<input type="text" name="event_name" id="event-name" value="<?php echo esc_attr($EM_Event->event_name,ENT_QUOTES); ?>" /><?php echo $required; ?>
 			<br />
@@ -50,7 +50,7 @@ if( !empty($_REQUEST['success']) ){
 		</div>
 		
 		<!-- When Section -->
-		<h3 class="event-form-when"><?php esc_html_e( 'When', 'dbem' ); ?></h3>
+		<h3 class="event-form-when internal-headline"><?php esc_html_e( 'When', 'dbem' ); ?></h3>
 		<div class="inside event-form-when">
 		<?php 
 			if( empty($EM_Event->event_id) && $EM_Event->can_manage('edit_recurring_events','edit_others_recurring_events') && get_option('dbem_recurrence_enabled') ){
@@ -65,14 +65,14 @@ if( !empty($_REQUEST['success']) ){
 
 		<!-- Where Section -->
 		<?php if( get_option('dbem_locations_enabled') ): ?>
-		<h3 class="event-form-where small-12"><?php esc_html_e( 'Where', 'dbem' ); ?></h3>
+		<h3 class="event-form-where small-12 internal-headline"><?php esc_html_e( 'Where', 'dbem' ); ?></h3>
 		<div class="inside event-form-where">
 		<?php em_locate_template('forms/event/location.php',true); ?>
 		</div>
 		<?php endif; ?>
 		
 		<!-- Details Section -->
-		<h3 class="event-form-details"><?php esc_html_e( 'Details', 'dbem' ); ?></h3>
+		<h3 class="event-form-details internal-headline"><?php esc_html_e( 'Details', 'dbem' ); ?></h3>
 		<div class="inside event-form-details">
 			<div class="event-editor">
 				<?php if( get_option('dbem_events_form_editor') && function_exists('wp_editor') ): ?>
@@ -91,7 +91,7 @@ if( !empty($_REQUEST['success']) ){
 		
 		<!-- Image Section -->
 		<?php if( $EM_Event->can_manage('upload_event_images','upload_event_images') ): ?>
-		<h3><?php esc_html_e( 'Event Image', 'dbem' ); ?></h3>
+		<h3 class="internal-headline"><?php esc_html_e( 'Match Image', 'dbem' ); ?></h3>
 		<div class="inside event-form-image">
 			<?php em_locate_template('forms/event/featured-image-public.php',true); ?>
 		</div>

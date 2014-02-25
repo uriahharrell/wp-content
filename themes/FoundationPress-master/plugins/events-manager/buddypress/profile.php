@@ -4,7 +4,7 @@ global $bp, $EM_Notices;
 echo $EM_Notices;
 if( user_can($bp->displayed_user->id,'edit_events') ){
 	?>
-	<h4><?php _e('My Games', 'dbem'); ?></h4>
+	<h4><?php _e('My Matches', 'dbem'); ?></h4>
 	<?php
 	$events = EM_Events::get(array('owner'=>$bp->displayed_user->id));
 	if( count($events) > 0 ){
@@ -17,7 +17,7 @@ if( user_can($bp->displayed_user->id,'edit_events') ){
 		echo EM_Events::output($events, $args);
 	}else{
 		?>
-		<p><?php _e('Not currently scheduled to host any games.', 'dbem'); ?>.
+		<p><?php _e('No matches posted by this user at this time.', 'dbem'); ?>.
 		<?php if( get_current_user_id() == $bp->displayed_user->id ): ?> 
 		<a href="<?php echo $bp->events->link . 'my-events/edit/'; ?>"><?php _e('Add Game','dbem'); ?></a>
 		<?php endif; ?>
@@ -26,7 +26,7 @@ if( user_can($bp->displayed_user->id,'edit_events') ){
 	}
 }
 ?>
-<h4><?php _e("Games I'm Attending", 'dbem'); ?></h4>
+<h4><?php _e("Matches I'm Attending", 'dbem'); ?></h4>
 <?php
 $EM_Person = new EM_Person( $bp->displayed_user->id );
 $EM_Bookings = $EM_Person->get_bookings();
@@ -39,6 +39,6 @@ if(count($EM_Bookings->bookings) > 0){
 	echo EM_Events::output(array('event'=>$event_ids));
 }else{
 	?>
-	<p><?php _e('Not currently scheduled to attend any games.','dbem'); ?></p>
+	<p><?php _e('Not currently scheduled to attend any matches.','dbem'); ?></p>
 	<?php
 }

@@ -25,3 +25,7 @@ p#avatar-upload {
 	height: 100px;
 	margin-bottom: 0;
 }
+
+div#buddypress div#item-body textarea#field_10 {
+	line-height: 1.3;
+}

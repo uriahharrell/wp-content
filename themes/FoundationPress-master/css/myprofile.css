@@ -45,15 +45,67 @@ div#buddypress div#item-nav li a span {
 
 /*Main Navigation Styling-----------------------------------------------------------------------------------------------*/
 /*Navigation background and right border for main nav*/
+div#buddypress div#item-nav div#object-nav ul {
+	margin-top: 8px;
+	position: relative;
+}
+
+/*Navigation background and right border for main nav*/
 div#object-nav ul li {
 	background: #FFF;
-	border-right: 1px solid #DDD;
+	border: 1px solid #DDD;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.4), inset 0 1px #fff;
+	margin: 0 -5px;
+	padding: 0 10px;
+	display: inline-block;
+	position: relative;
+	z-index: 0;
+}
+
+/*Stuff to make tabs*/
+div#buddypress div#item-nav div#object-nav ul:before {
+	border-bottom: 1px solid #ddd;
+	position: absolute;
+	content: " ";
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/*Stuff to make tabs*/
+div#object-nav ul li:before {
+	left: -6px;
+	border-bottom-right-radius: 6px;
+	border-width: 0 1px 1px 0;
+	box-shadow: 2px 2px 0 #D1D1D1;
+}
+
+/*Stuff to make tabs*/
+div#object-nav ul li:after, div#object-nav ul li:before {
+	border: 1px solid #AAA;
+	position: absolute;
+	bottom: -1px;
+	width: 5px;
+	height: 5px;
+	content: " ";
+}
+
+/*Stuff to make tabs*/
+div#object-nav ul li:after {
+	right: -6px;
+	border-bottom-left-radius: 6px;
+	border-width: 0 0 1px 1px;
+	box-shadow: -2px 2px 0 #D1D1D1;
 }
 
 /*Remove the right border on the last item of the main nav*/
 div#object-nav ul li:last-child {
 	border-right: none;
 }
+
 
 /*Sub Navigation Styling------------------------------------------------------------------------------------------------*/
 /*Left border for the first item of the subnav*/
@@ -72,11 +124,6 @@ div#subnav ul li {
 div#buddypress div#subnav ul li a {
 	color: #4d4d4d;
 }
-
-
-
-
-
 
 #search-message-form {
 	width: 230px;

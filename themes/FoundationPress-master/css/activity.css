@@ -28,28 +28,31 @@ div#buddypress div#item-body li#activity-filter-select {
 	width: 200px;
 }
 
+/*Show filter label*/
 div#buddypress div#item-body #activity-filter-select label {
 	float: left;
 	padding-right: 0;
 }
 
+/*show filter select*/
 div#buddypress div#item-body #activity-filter-select select {
 	float: right;
 	max-width: 125px;
 	padding: 2px;
 	height: 29px;
-	margin: -3px 0 0 0;
+	margin: 0;
 }
 
 /*Activity stream styling------------------------------------------------------------------------------------------------*/
 /*Remove top padding so that there isn't an awkward border line just above the alternating colored li's*/
 div#buddypress div#item-body div.activity ul#activity-stream li {
 	padding-top: 0;
+	border-bottom: 1px solid #fafafa;
 }
 
 /*Make every other stream item a slightly different color*/
 div#buddypress div#item-body div.activity ul#activity-stream li:nth-child(even) {
-	background: #F1F1F1;
+	background: #fafafa;
 }
 
 /*Add margin around the avatars in stream items*/

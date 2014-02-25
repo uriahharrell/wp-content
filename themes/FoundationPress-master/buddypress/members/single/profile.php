@@ -19,6 +19,8 @@
 
 <div class="profile" role="main">
 
+
+
 <?php switch ( bp_current_action() ) :
 
 	// Edit

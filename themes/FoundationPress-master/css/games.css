@@ -7,6 +7,32 @@ form#event-form div.event-categories select {
 	height: 60px;
 }
 
+/*Times in start and end time selector space out*/
+body div.time-picker ul li {
+	margin: 5px 0;
+}
+
+/*selected tim in start and end time keep same style except for size*/
+body div.time-picker ul li.selected {
+	color: #111;
+	font-size: 14pt;
+	margin-bottom: 10px;
+	background: none;
+}
+
+/*label for division selector box*/
+div#buddypress div#item-body form#event-form div.event-categories label {
+	font-size: 1.6875rem;
+}
+
+/*division selector box styling*/
+div#buddypress div#item-body form#event-form div.event-categories select {
+	font-size: 14pt;
+	height: 200px;
+	color: #222222;
+}
+
+
 /*When Section---------------------------------------------------------------------------------------------------------*/
 /*Height of When Container*/
 #buddypress #item-body div.event-form-when {
@@ -22,4 +48,9 @@ form#event-form div.event-categories select {
 /*hides the ticketing information so that the user cannot alter it*/
 #buddypress #item-body div.hidden {
 	display: none;
+}
+
+/*seach games styling*/
+div#buddypress div#item-body p.search-box label.screen-reader-text {
+	margin: 15px 0 10px 0;
 }

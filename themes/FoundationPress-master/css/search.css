@@ -1,0 +1,62 @@
+/*Styling for the event search page-----------------------------------------------------------------------------------------*/
+/*Float the navigation at the top to the right side of the screen*/
+div#buddypress.search-page div#object-nav ul {
+	float: right;
+}
+
+/*Add margin above and below the Search Matches headline*/
+#em-wrapper h3.search-headline {
+	margin: 16px 0;
+	padding-left: 16px;
+}
+
+/*Add border and internal color to search and near inputs*/
+#em-wrapper input.em-events-search-text.em-search-text, #em-wrapper input.em-search-geo {
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	background: #fafafa;
+	width: 300px;
+}
+
+/*shrink container for magnifying glass and locatino images by search and near inputs*/
+#em-wrapper div.em-search-text.em-search-field, #em-wrapper div.em-search-geo.em-search-field {
+	padding: 0;
+	margin: 0;
+	height: 0;
+	width: 0;
+}
+
+/*Hide magnifying glass and location images by search and near inputs*/
+#em-wrapper div.css-search div.em-search-text, #em-wrapper div.css-search div.em-search-geo {
+	background: none;
+}
+
+/*submit btn size and position*/
+div.css-search div.em-search-main .em-search-submit {
+	height: 50px;
+	width: 50px;
+	top: 8px;
+	right: 8px;
+
+}
+
+/*img inside submit button size*/
+div.css-search div.em-search-main .em-search-submit img {
+	height: 25px;
+	width: 25px;
+}
+
+/*remove bottom border and padding on the search and near inputs and submit button container*/
+#em-wrapper div.em-search-main {
+	border-bottom: none;
+	padding: 0 0 0 8px;
+}
+
+/*equalize width of all search select*/
+#em-wrapper div.em-search-advanced select {
+	width: 200px;
+}
+
+div.internal-body section.internal-bg table.events-table {
+	width: 50%;
+}
