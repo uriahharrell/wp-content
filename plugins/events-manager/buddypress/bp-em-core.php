@@ -133,7 +133,7 @@ class BP_EM_Component extends BP_Component {
 		
 		if( $can_manage_bookings && get_option('dbem_rsvp_enabled') ){
 			$sub_nav[] = array(
-				'name' => __( 'My Scheduled Games', 'dbem' ),
+				'name' => __( 'My Scheduled Matches', 'dbem' ),
 				'slug' => 'my-bookings',
 				'parent_slug' => em_bp_get_slug(),
 				'parent_url' => $em_link,

@@ -31,6 +31,12 @@ nav.top-bar {
 	background: #234D68;
 	margin-top: 20px;
 	text-align: center;
+
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-0-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
 }
 
 /*Styling for the off-canvas nav*/
@@ -70,6 +76,11 @@ nav.tab-bar {
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background: #234D68;
 	line-height: normal;
+}
+
+/*hover state for the nav btns*/
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: #234d68;
 }
 
 /*Set medium blue background for last list item (the login)*/

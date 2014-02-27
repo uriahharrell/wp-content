@@ -1,7 +1,7 @@
 /*Styling for the Games tab in the internal main nav-------------------------------------------------------------------*/
 
 /*div#buddy*/
-press div#item-body divm-warning.updated p
+div#item-body div.updated p
 /*Add new game section-------------------------------------------------------------------------------------------------*/
 /*Category selection*/
 form#event-form div.event-categories select {
@@ -70,10 +70,33 @@ div#buddypress div#item-body p.search-box label.screen-reader-text {
 	display: none;
 }
 
-/**/
+/*Remove game name from list on small screens*/
 @media (min-width: 1px) and (max-width: 460px) {
 	body.matches.profile  #buddypress table.events-table tr th:nth-child(3),
 	body.matches.profile  #buddypress table.events-table tr td:nth-child(3) {
 		display: none;
 	}
 }
+
+/*Fix add new game section on small screens*/
+@media (min-width: 1px) and (max-width: 850px) {
+	body.matches.my-events #em-location-data table.em-location-data {
+		width: 100%;
+	}
+
+	body.matches.my-events #em-location-data div.em-location-map-container {
+		width: 100%;
+	}
+}
+
+/*Styling for add new location*/
+@media (min-width: 1px) and (max-width: 850px) {
+	body.matches.my-locations #em-location-data table.em-location-data {
+		width: 100%;
+	}
+
+	body.matches.my-locations #em-location-data div.em-location-map-container {
+		width: 100%;
+	}
+}
+

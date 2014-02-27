@@ -12,10 +12,11 @@
 		<div class="wrap columns btn-box">
 			<a class="columns find-btn" href="#">FIND YOUR MATCH</a>
 			<!-- If the user is not logged in, the create your match button will take you too the registration page -->
-			<?php if (get_option('users_can_register')) : ?>
-			<a class="columns create-btn" href="<?php bloginfo('wpurl'); ?>/wp-login.php?action=register"><?php _e('CREATE YOUR OWN') ?></a>
-			<?php endif; ?>
-			
+			<?php if (get_option('users_can_register') && !is_user_logged_in()) { ?>
+			<a class="columns create-btn" href="<?php echo bloginfo('wpurl'); ?>/wp-login.php?action=register"><?php _e('CREATE YOUR OWN') ?></a>
+			<?php } else { ; ?>
+			<a class="columns create-btn" href="<?php echo bp_loggedin_user_domain(); ?>/matches/my-events/?action=edit"><?php _e('CREATE YOUR OWN') ?></a>
+			<?php } ; ?>
 			
 		</div>
 		

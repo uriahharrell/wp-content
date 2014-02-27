@@ -27,7 +27,7 @@
             <section class="top-bar-section row">
 
               <!-- Left Nav Section, logo image -->
-              <img src="<?php bloginfo('template_directory'); ?>/css/images/header-logo.png" alt="Match">
+              <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/css/images/header-logo.png" alt="Match"></a>
 
               <!-- Right Nav Section -->
               <div class="hide-for-small nav-box">

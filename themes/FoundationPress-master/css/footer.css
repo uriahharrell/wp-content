@@ -30,12 +30,21 @@ footer li {
 
 /*Default settings for footer list items*/
 footer li a {
-	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 11pt;
-	letter-spacing: 2px;
 	color: #a9e0f9;
 	margin: 0;
 	padding: 0;
+
+}
+
+footer li a:hover {
+	color: #fff;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
 }
 
 /*style the contact button*/
@@ -50,6 +59,15 @@ a.contact-btn {
 	margin-top: 111px;
 	margin-bottom: 65px;
 	padding: 10px;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+a.contact-btn:hover {
+	color: #fff;
 }
 
 /*Decrease the padding in the footer so that the nav doesn't break*/

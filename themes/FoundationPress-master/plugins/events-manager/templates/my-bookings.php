@@ -36,7 +36,7 @@
 				<table id='dbem-bookings-table' class='widefat post fixed'>
 					<thead>
 						<tr>
-							<th class='manage-column' scope='col'><?php _e('Event', 'dbem'); ?></th>
+							<th class='manage-column' scope='col'><?php _e('Match', 'dbem'); ?></th>
 							<th class='manage-column' scope='col'><?php _e('Date', 'dbem'); ?></th>
 							<th class='manage-column' scope='col'><?php _e('Spaces', 'dbem'); ?></th>
 							<th class='manage-column' scope='col'><?php _e('Status', 'dbem'); ?></th>
@@ -82,7 +82,7 @@
 				</table>
 				</div>
 				<?php else: ?>
-					<?php _e('You do not have any games scheduled.', 'dbem'); ?>
+					<?php _e('You do not have any matches scheduled.', 'dbem'); ?>
 				<?php endif; ?>
 			<?php if( !empty($bookings_nav) && $bookings_count >= $limit ) : ?>
 			<div class='tablenav'>
@@ -93,5 +93,5 @@
 		</div>
 		<?php do_action('em_template_my_bookings_footer', $EM_Bookings); ?>
 <?php else: ?>
-	<p><?php echo sprintf(__('Please <a href="%s">Log In</a> to view your games.','dbem'),site_url('wp-login.php?redirect_to=' . urlencode(get_permalink()), 'login'))?></p>
+	<p><?php echo sprintf(__('Please <a href="%s">Log In</a> to view your matches.','dbem'),site_url('wp-login.php?redirect_to=' . urlencode(get_permalink()), 'login'))?></p>
 <?php endif; ?>

@@ -32,12 +32,17 @@ div#item-body a.find-friends-btn {
 	color: #a9e0f9;
 	padding: 5px 10px;
 	border: none;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
 
 }
 
 div#item-body a.find-friends-btn:hover {
 	background: #234d68;
-	color: #3c718e;
+	color: #fff;
 	border: none;
 }
 

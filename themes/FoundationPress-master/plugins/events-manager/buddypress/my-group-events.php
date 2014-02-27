@@ -27,7 +27,7 @@
 	<?php
 	if (empty ( $EM_Events )) {
 		// TODO localize
-		echo "<p>". __( 'No Events','dbem' ) ."</p>";
+		echo "<p>". __( 'No Games','dbem' ) ."</p>";
 	} else {
 	?>
 			

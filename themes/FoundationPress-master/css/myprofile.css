@@ -27,9 +27,6 @@ div#buddypress div#object-nav ul li a, div#buddypress div#subnav ul li a {
 	color: #234d68;
 }
 
-
-
-
 /*Settings for numbers next to messages, notifications, and friends*/
 div#buddypress div#item-nav li a span {
 	font-size: 80%;
@@ -90,6 +87,16 @@ div#subnav ul li {
 /*Change font color of the subnav*/
 div#buddypress div#subnav ul li a {
 	color: #4d4d4d;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+/*hover state of <a>*/
+div#buddypress div#subnav ul li a:hover {
+	color: #a9e0f9;
 }
 
 #search-message-form {

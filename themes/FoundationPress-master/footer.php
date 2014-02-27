@@ -8,19 +8,20 @@
 
         <!-- Left Navigation Column -->
         <ul class="small-6 medium-6 large-5 columns">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">More info</a></li>
-          <li><a href="#">Something</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">HOW IT WORKS</a></li>
+          <li><a href="#">MORE INFO</a></li>
+          <li><a href="#">SOMETHING</a></li>
         </ul>
 
-        <!-- Right navigation column -->
-        <ul class="small-6 medium-6 large-5 columns">
-          <li><a href="#">Login</a></li>
-          <li><a href="#">My account</a></li>
-          <li><a href="#">Make a game</a></li>
-          <li><a href="#">Search games</a></li>
-        </ul>
+        <!-- Right navigation column (Same as header navigation)-->
+        <?php
+          if ( is_user_logged_in() ) {
+               wp_nav_menu( array( 'theme_location' => 'logged-in' ) );
+          } else {
+               wp_nav_menu( array( 'theme_location' => 'visitor' ) );
+          }
+        ?>
 
       </div>
       
