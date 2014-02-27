@@ -1,5 +1,9 @@
 /*Member Search Form-----------------------------------------------------------------------------------------------------*/
 
+div#item-header-content div#item-meta div#latest-update {
+	max-width: 500px;
+}
+
 /*Members Search Container*/
 #buddypress #members-dir-search {
 	width: 250px;
@@ -12,7 +16,6 @@
 	width: 180px;
 	height: 35px;
 	padding: 2px 6px;
-
 }
 
 /*Members Search Btn*/
@@ -22,14 +25,12 @@
 	margin: 0px;
 	padding: 0px;
 	height: 35px;
-
 }
 
 /*Order By Container*/
 #buddypress #members-order-select {
 	border: none;
 	width: 250px;
-
 }
 
 /*Order By Label*/
@@ -45,3 +46,24 @@
 	height: 29px;
 	padding: 2px;
 }
+
+#buddypress #item-meta div#item-buttons {
+	margin-top: 15px;
+}
+
+/*Fix cancel friendship, public message, and privage message btns when looking at someone elses profile*/
+@media (min-width: 1px) and (max-width: 495px) {
+	#buddypress #item-header-content #item-meta div#item-buttons div.generic-button {
+		margin: 20px 0 0 0;
+		float: none;
+	}
+	#buddypress #item-meta div#item-buttons {
+		margin-top: none;
+	}
+
+	#buddypress #item-meta div#latest-update, #buddypress #item-header #item-header-content span.activity {
+		display: none;
+	}
+	
+}
+

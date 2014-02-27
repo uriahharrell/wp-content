@@ -23,3 +23,17 @@
 #buddypress #item-body #settings-form table {
 	width: 60%;
 }
+
+/*Make input boxes full width on small screens*/
+@media (min-width: 1px) and (max-width: 640px) {
+	#buddypress #item-body form#settings-form input {
+		width: 100%;
+	}
+}
+
+/*Resize settings tables for email on smaller screens */
+@media (min-width: 1px) and (max-width: 800px) {
+	#buddypress #item-body form#settings-form table {
+		width: 100%;
+	}
+}

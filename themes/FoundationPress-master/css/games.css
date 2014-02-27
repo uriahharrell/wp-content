@@ -1,6 +1,7 @@
 /*Styling for the Games tab in the internal main nav-------------------------------------------------------------------*/
 
-
+/*div#buddy*/
+press div#item-body divm-warning.updated p
 /*Add new game section-------------------------------------------------------------------------------------------------*/
 /*Category selection*/
 form#event-form div.event-categories select {
@@ -53,4 +54,26 @@ div#buddypress div#item-body form#event-form div.event-categories select {
 /*seach games styling*/
 div#buddypress div#item-body p.search-box label.screen-reader-text {
 	margin: 15px 0 10px 0;
+}
+
+
+/*Matches I'm Attending Section-------------------------------------------------------------------------------------------*/
+
+#buddypress #item-body div.em-my-bookings table#dbem-bookings-table  {
+	position: static;
+}
+
+
+#buddypress #item-body div.em-my-bookings table#dbem-bookings-table tr th:nth-child(3),
+#buddypress #item-body div.em-my-bookings table#dbem-bookings-table tr td:nth-child(3)
+ {
+	display: none;
+}
+
+/**/
+@media (min-width: 1px) and (max-width: 460px) {
+	body.matches.profile  #buddypress table.events-table tr th:nth-child(3),
+	body.matches.profile  #buddypress table.events-table tr td:nth-child(3) {
+		display: none;
+	}
 }

@@ -24,3 +24,13 @@ div#buddypress div#item-body li#members-order-select form select {
 div#buddypress div#item-body table.notifications {
 	margin-bottom: 5px;
 }
+
+/*Shrink time stamp before we hit small screens*/
+@media (min-width: 1px) and (max-width: 443px) {
+	#buddypress #item-body #subnav li#members-order-select {
+		margin-top: 15px;
+		margin-left: 0px;
+		margin-right: 30px;
+
+	}
+} 

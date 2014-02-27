@@ -9,7 +9,7 @@ class BP_EM_Component extends BP_Component {
 	
 	function __construct() {
 		global $bp;
-		parent::start('events',	__('Game', 'dbem'), EM_DIR);
+		parent::start('events',	__('Match', 'dbem'), EM_DIR);
 		$this->includes();
 		//TODO make BP component optional
 		$bp->active_components[$this->id] = '1';
@@ -78,7 +78,7 @@ class BP_EM_Component extends BP_Component {
 		}
 		/* Add 'Events' to the main user profile navigation */
 		$main_nav = array(
-			'name' => __( 'Games', 'dbem' ),
+			'name' => __( 'Matches', 'dbem' ),
 			'slug' => em_bp_get_slug(),
 			'position' => 80,
 			'screen_function' => 'bp_em_events',
@@ -89,7 +89,7 @@ class BP_EM_Component extends BP_Component {
 		
 		/* Create SubNav Items */
 		$sub_nav[] = array(
-			'name' => __( 'My Profile', 'dbem' ),
+			'name' => __( 'Public Match Profile', 'dbem' ),
 			'slug' => 'profile',
 			'parent_slug' => em_bp_get_slug(),
 			'parent_url' => $em_link,
@@ -98,7 +98,7 @@ class BP_EM_Component extends BP_Component {
 		);
 		
 		$sub_nav[] = array(
-			'name' => __( 'Games I\'m Attending', 'dbem' ),
+			'name' => __( 'Matches I\'m Attending', 'dbem' ),
 			'slug' => 'attending',
 			'parent_slug' => em_bp_get_slug(),
 			'parent_url' => $em_link,
@@ -109,7 +109,7 @@ class BP_EM_Component extends BP_Component {
 	
 		if( $can_manage_events ){
 			$sub_nav[] = array(
-				'name' => __( 'My Games', 'dbem' ),
+				'name' => __( 'My Posted Matches', 'dbem' ),
 				'slug' => 'my-events',
 				'parent_slug' => em_bp_get_slug(),
 				'parent_url' => $em_link,
@@ -146,7 +146,7 @@ class BP_EM_Component extends BP_Component {
 		if( bp_is_active('groups') ){
 			/* Create Profile Group Sub-Nav */
 			$sub_nav[] = array(
-				'name' => __( 'Games', 'dbem' ),
+				'name' => __( 'Matches', 'dbem' ),
 				'slug' => 'group-events',
 				'parent_slug' => bp_get_groups_slug(),
 				'parent_url' =>trailingslashit( bp_loggedin_user_domain() . bp_get_groups_slug() ),

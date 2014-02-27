@@ -42,7 +42,22 @@ div#buddypress div#item-body #delete_inbox_messages {
 	padding: 4px 10px;
 	color: #777;
 	border: 1px solid #ccc;
-	
 }
 
+/*Remove right border from input boxes*/
+#buddypress #item-body form#send_message_form input#subject, #buddypress #item-body form#send_message_form textarea {
+	width: 100%;
+}
 
+/*Fix The first time the search box breaks, hide message avatar for smaller screens*/
+@media (min-width: 1px) and (max-width: 659px) {
+	#buddypress div.message-search {
+		margin-top: 20px;
+		margin-left: 0px;
+		margin-right: 40px;
+	}
+
+	#item-body #message-threads td.thread-count, #item-body #message-threads td.thread-avatar {
+		display: none;
+	}
+}

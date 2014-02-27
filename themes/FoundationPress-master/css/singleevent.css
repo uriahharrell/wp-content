@@ -1,0 +1,16 @@
+/*Center the map for smaller screens*/
+@media (min-width: 1px) and (max-width: 700px) {
+	html body.single-event div.bg-grey div:first-child {
+		float:none !important;
+		margin: 0 auto 25px auto !important;
+		display: block;
+		padding: 0;
+	}
+}
+
+/*scale the width of the map for small screens*/
+@media (min-width: 1px) and (max-width: 505px) {
+	html body.single-event div.em-location-map-container {
+		width: 100% !important;
+	}
+}

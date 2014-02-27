@@ -40,3 +40,25 @@ div#item-body a.find-friends-btn:hover {
 	color: #3c718e;
 	border: none;
 }
+
+/*Hide cancel friendship button on small screens */
+@media (min-width: 1px) and (max-width: 640px) {
+	#buddypress #item-body #members-list div.friendship-button {
+		display: none;
+	}
+}
+
+/*fix order-by filter break, change font-size in find more friends button*/
+@media (min-width: 1px) and (max-width: 496px) {
+	body.friends #buddypress #item-body li#members-order-select {
+		margin-left: 0px;
+		margin-right: 60px;
+		margin-top: 20px;
+	}
+
+	#buddypress #item-body div.find-friends a {
+		font-size: 14pt;
+	}
+
+}
+ 

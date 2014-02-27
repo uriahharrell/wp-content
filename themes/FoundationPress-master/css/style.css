@@ -13,7 +13,8 @@
 @import url('settings.css');
 @import url('games.css');
 @import url('search.css');
-
+@import url('singleevent.css');
+@import url('singlelocation.css');
 
 *,
 *:after,
@@ -26,3 +27,7 @@
 	text-rendering:optimizeLegibility;
 }
 
+/*Add clearfix*/
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }

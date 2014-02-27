@@ -1,6 +1,6 @@
 /*Subnav for the Activity Section---------------------------------------------------------------------------------------*/
 /*Change the margins and remove the border on the "Show" section for the activity stream*/
-div#buddypress div#item-body div#subnav ul li#activity-filter-select:last-child {
+div#item-body div#subnav ul li#activity-filter-select:last-child {
 	margin-top: 0;
 	margin-left: 20px;
 	border: none;
@@ -75,4 +75,60 @@ div#buddypress div#item-body .activity-content .activity-header figure {
 /*Remove margin on the post update btn container*/
 div#buddypress div#item-body div#whats-new-submit {
 	margin-top: 0;
+}
+
+/*Shrink time stamp before we hit small screens*/
+@media (min-width: 1px) and (max-width: 800px) {
+	div#buddypress div#item-body span.time-since {
+		font-size: 8pt;
+
+	}
+}
+
+/*Hide time stamp before for small screens*/
+@media (min-width: 1px) and (max-width: 800px) {
+	div#buddypress div#item-body span.time-since {
+		display: none;
+
+	}
+}
+
+/*Hide avatar next to stream info for small screens*/
+@media (min-width: 1px) and (max-width: 640px) {
+
+	div#whats-new-avatar {
+		display: none;
+		height:0;
+		width:0;
+		margin:0;
+		padding:0;
+	}
+
+	div#item-body #whats-new-form p.activity-greeting, div#item-body #whats-new-form div#whats-new-content {
+		margin-left: 0px;
+		padding: 0;
+	}
+
+	div#buddypress div#item-body div.activity-avatar {
+		display: none;
+		height:0;
+		width:0;
+		margin:0;
+		padding:0;
+	}
+
+	#item-body ul#activity-stream div.activity-content {
+		margin-left: 0;
+	}
+}
+
+/*Fix activity filter when it breaks*/
+@media (min-width: 1px) and (max-width: 603px) {
+	#buddypress #item-body #subnav ul li#activity-filter-select {
+		margin-top: 15px;
+		margin-left: 0px;
+	}
+	#buddypress #item-body #subnav ul li#activity-filter-select label {
+		padding: 0px;
+	}
 }

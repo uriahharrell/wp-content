@@ -29,3 +29,7 @@ p#avatar-upload {
 div#buddypress div#item-body textarea#field_10 {
 	line-height: 1.3;
 }
+
+div.internal-body section.internal-bg div#buddypress table.events-table {
+	width: 100%;
+}

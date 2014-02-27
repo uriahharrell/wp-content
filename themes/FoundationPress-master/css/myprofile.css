@@ -28,35 +28,28 @@ div#buddypress div#object-nav ul li a, div#buddypress div#subnav ul li a {
 }
 
 
-/*background for main nav and sub nav*/
-div#buddypress div#object-nav ul li.selected a, div#buddypress div#subnav ul li.selected a  {
-	background: #a9e0f9;
-}
 
-/*Space between main nav and sub nav*/
-#buddypress div.item-list-tabs#subnav {
-	margin: 30px 0;
-}
 
 /*Settings for numbers next to messages, notifications, and friends*/
 div#buddypress div#item-nav li a span {
-	font-size: 100%;
+	font-size: 80%;
+	display: inline;
 }
 
 /*Main Navigation Styling-----------------------------------------------------------------------------------------------*/
 /*Navigation background and right border for main nav*/
 div#buddypress div#item-nav div#object-nav ul {
-	margin-top: 8px;
+	margin-top: 0px;
 	position: relative;
+
 }
 
 /*Navigation background and right border for main nav*/
 div#object-nav ul li {
-	background: #FFF;
+	background: #f5f5f5;
 	border: 1px solid #DDD;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
-	box-shadow: 0 3px 3px rgba(0,0,0,0.4), inset 0 1px #fff;
 	margin: 0 -5px;
 	padding: 0 10px;
 	display: inline-block;
@@ -64,41 +57,15 @@ div#object-nav ul li {
 	z-index: 0;
 }
 
-/*Stuff to make tabs*/
-div#buddypress div#item-nav div#object-nav ul:before {
-	border-bottom: 1px solid #ddd;
-	position: absolute;
-	content: " ";
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	z-index: 1;
+div#object-nav ul li.current {
+	border-bottom: none;
+	background-color: #fff;
 }
 
-/*Stuff to make tabs*/
-div#object-nav ul li:before {
-	left: -6px;
-	border-bottom-right-radius: 6px;
-	border-width: 0 1px 1px 0;
-	box-shadow: 2px 2px 0 #D1D1D1;
-}
 
-/*Stuff to make tabs*/
-div#object-nav ul li:after, div#object-nav ul li:before {
-	border: 1px solid #AAA;
-	position: absolute;
-	bottom: -1px;
-	width: 5px;
-	height: 5px;
-	content: " ";
-}
 
-/*Stuff to make tabs*/
-div#object-nav ul li:after {
-	right: -6px;
-	border-bottom-left-radius: 6px;
-	border-width: 0 0 1px 1px;
-	box-shadow: -2px 2px 0 #D1D1D1;
+div#buddypress div#object-nav ul li.current a {
+	background: #fff;
 }
 
 /*Remove the right border on the last item of the main nav*/
@@ -127,4 +94,15 @@ div#buddypress div#subnav ul li a {
 
 #search-message-form {
 	width: 230px;
+}
+
+/*background for sub nav*/
+div#buddypress div#subnav ul li.selected a  {
+	background: #a9e0f9;
+}
+
+
+/*Space between sub nav and Find more friends here btn*/
+#buddypress div.item-list-tabs#subnav {
+	margin-bottom: 20px;
 }

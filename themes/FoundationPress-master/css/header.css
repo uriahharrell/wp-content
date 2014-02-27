@@ -62,6 +62,10 @@ nav.tab-bar {
 	background: #234d68;
 }
 
+.left-off-canvas-menu ul li a span {
+	display: inline;
+}
+
 /*Set the defeault background for nav items*/
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background: #234D68;

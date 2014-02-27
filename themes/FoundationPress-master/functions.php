@@ -33,7 +33,7 @@ require_once('library/theme-support.php');
 add_filter( 'wp_nav_menu_items', 'my_nav_menu_links' );
 function my_nav_menu_links($menu) { 	
 
-	$searchmatcheslink = '<li><a href="' . home_url() . '/matches">' . __('SEARCH MATCHES') . '</a></li>';
+	$searchmatcheslink = '<li><a href="' . home_url() . '/matches">' . __('FIND MATCH') . '</a></li>';
 	
 	if (!is_user_logged_in()) {
 		$creatematchlink = '<li><a href="' . wp_registration_url() . '">' . __('CREATE MATCH') . '</a></li>';
@@ -57,7 +57,7 @@ function my_nav_menu_links_mobile($menu,$args) {
 	} elseif (is_user_logged_in() && $args->theme_location == 'top-bar-r') {
 		$settingslink = '<li><a href="' . bp_loggedin_user_domain() . '/settings">' . __('SETTINGS') . '</a></li>';
 		$matcheslink = '<li><a href="' . bp_loggedin_user_domain() . '/matches">' . __('MATCHES') . '</a></li>';
-		$friendslink = '<li><a href="' . bp_loggedin_user_domain() . '/settings">' . __('SETTINGS') . '</a></li>';
+		$friendslink = '<li><a href="' . bp_loggedin_user_domain() . '/friends">' . __('FRIENDS') . '</a></li>';
 		$messageslink = '<li><a href="' . bp_loggedin_user_domain() . '/messages">' . __('MESSAGES') . '</a></li>';
 		$notificationslink = '<li><a href="' . bp_loggedin_user_domain() . '/notifications">' . __('NOTIFICATIONS') . '</a></li>';
 		$profilelink = '<li><a href="' . bp_loggedin_user_domain() . '/profile">' . __('PROFILE') . '</a></li>';

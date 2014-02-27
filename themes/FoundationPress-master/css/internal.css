@@ -8,22 +8,20 @@ div#buddypress {
 /*White background on internal pages*/
 div.bg-grey {
 	background: #fff;
-	padding: 30px;
-	
+	padding: 30px 30px 30px 30px;
 }
-
 
 .internal-body {
 	width: 100%;
-
 }
 
 .internal-bg {
-	background: #eee;
+	background: #e5e5e5;
 	z-index: -10000;
 	width: 100%;
 	height: 100%;
 	border-bottom: 8px solid #a9e0f9;
+	padding: 0 15px;
 	
 }
 
@@ -89,4 +87,75 @@ a {
 	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	letter-spacing: 3px;
 	padding-left: 6px;
+}
+
+/*Styles for Sub-navigation----------------------------------------------------------------------------------------------*/
+
+div#item-nav div#object-nav.tabnav2 {
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #e5e5e5;
+	display: block;
+	height: 100%;
+	padding-top: 8px;
+}
+
+div#item-nav div#object-nav.tabnav2 ul {
+	float: right;
+	margin: 0;
+}
+
+div#item-nav div#object-nav.tabnav2 ul li {
+	padding: 0 15px;
+	margin: 0;
+	border-bottom: #eee;
+	background: #f5f5f5;
+	color: #3c718e;
+}
+
+div#item-nav div#object-nav.tabnav2 ul li a {
+font-family: Helvetica, Arial, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #234d68;
+}
+
+div#item-nav div#object-nav.tabnav2 ul li:last-child {
+	border-right: 1px solid #ddd;
+}
+
+div#item-nav div#object-nav.tabnav2 ul li.selected {
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+
+div#item-nav div#object-nav.tabnav2 ul li a span {
+	color: #579b43;
+}
+
+/*Center the Subnav at the same time that the main nav centers*/
+@media (min-width: 1px) and (max-width: 875px) {
+	div#item-nav div#object-nav.tabnav2 {
+			position: relative;
+			width: 100%;
+			text-align: center;
+		}
+
+	div#item-nav div#object-nav.tabnav2 ul {
+		float: none;
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 375px) {
+	div.bg-grey {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	section.internal-bg {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
 }
