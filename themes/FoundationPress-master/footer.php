@@ -10,8 +10,7 @@
         <ul class="small-6 medium-6 large-5 columns">
           <li><a href="#">FAQ</a></li>
           <li><a href="#">HOW IT WORKS</a></li>
-          <li><a href="#">MORE INFO</a></li>
-          <li><a href="#">SOMETHING</a></li>
+          <li><a href="<?php echo( bp_loggedin_user_domain() ); ?>/messages">MESSAGES</a></li>
         </ul>
 
         <!-- Right navigation column (Same as header navigation)-->

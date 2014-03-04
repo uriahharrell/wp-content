@@ -1,5 +1,5 @@
 
-<?php get_header(); ?>
+<?php /*Template Name: Page*/ get_header(); ?>
 
 	<div class="internal-body" role="main">
 	

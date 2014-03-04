@@ -27,7 +27,7 @@ font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 /*Headline Text*/
 h1.headline {
 	font-size: 40pt;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	color: #a9e0f9;
 	margin-top: 190px;
 }
@@ -35,7 +35,7 @@ h1.headline {
 /*Sub-headline Text*/
 h2.subheadline {
 	font-size: 16pt;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	color: #a9e0f9;
 	margin-top: -20px;
 }
@@ -53,7 +53,7 @@ h2.subheadline {
 	text-align: center;
 	width: 222px;
 	margin: 0px;
-	padding: 5px;
+	padding: 7px 5px 4px 5px;
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -85,7 +85,7 @@ h2.subheadline {
 /*how it works text*/
 .howitworks p {
 	font-size: 16pt;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	text-align: center;
 	color: #a9e0f9;
 	padding: 8px;
@@ -101,10 +101,10 @@ h2.subheadline {
 /*Basic styling for the text above all the how images*/
 .howimages p {
 	font-family: MyriadPro-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14pt;
+	font-size: 11pt;
 	text-align: center;
 	line-height: 110%;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	color: #a9e0f9;
 	margin-top: 35px;
 	margin-bottom: 30px;

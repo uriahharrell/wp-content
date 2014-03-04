@@ -21,19 +21,18 @@
 			<?php if( $args['show_main'] ): //show the 'main' search form ?>
 			<div class="em-search-main">
 				<?php do_action('em_template_events_search_form_header'); //hook in here to add extra fields, text etc. ?>
-				<?php 
-				//search text
-				if( !empty($args['search_term']) ) em_locate_template('templates/search/search.php',true,array('args'=>$args));
-				if( !empty($args['search_geo']) ) em_locate_template('templates/search/geo.php',true,array('args'=>$args));
-				?>
-				<?php if( !empty($args['css']) ) : //show the button here if we're using the default styling, if you still want to use this and use custom CSS, then you have to override our rules ?>
-				<button type="submit" class="em-search-submit loading">
-					<?php //before you ask, this hack is necessary thanks to stupid IE7 ?>
-					<!--[if IE 7]><span><![endif]-->
-					<img src="<?php echo EM_DIR_URI; ?>includes/images/search-mag.png" />
-					<!--[if IE 7]></span><![endif]-->
-				</button>
-				<?php endif; ?>
+				
+					<?php 
+					//search text
+					if( !empty($args['search_term']) ) em_locate_template('templates/search/search.php',true,array('args'=>$args));
+					?>
+				
+				
+					<?php 
+					if( !empty($args['search_geo']) ) em_locate_template('templates/search/geo.php',true,array('args'=>$args));
+					?>
+				
+			
 			</div>
 			<?php endif; ?>
 			<?php if( !empty($args['show_advanced']) ): //show advanced fields, collapesed if the main form is shown, inline if not ?>
@@ -63,6 +62,15 @@
 			<?php endif; ?>
 			<?php if( (empty($args['show_advanced']) || empty($args['search_countries'])) && !empty($args['country']) ): //show country in hidden field for geo searching ?>
 			<input type="hidden" name="country" value="<?php echo esc_attr($args['country']) ?>" />
+			<?php endif; ?>
+			<?php if( !empty($args['css']) ) : //show the button here if we're using the default styling, if you still want to use this and use custom CSS, then you have to override our rules ?>
+			<button type="submit" class="em-search-submit loading">
+				<?php //before you ask, this hack is necessary thanks to stupid IE7 ?>
+				<!--[if IE 7]><span><![endif]-->
+				<img src="<?php echo EM_DIR_URI; ?>includes/images/search-mag.png" />
+				<!--[if IE 7]></span><![endif]-->
+				<p>SEARCH</p>
+			</button>
 			<?php endif; ?>
 		</form>
 	</div>

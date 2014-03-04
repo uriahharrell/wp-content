@@ -1273,7 +1273,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 #buddypress div.item-list-tabs ul li.current a {
 	background-color: #eee;
 	color: #555;
-	opacity: .8;
+	opacity: 1;
 	font-weight: bold;
 }
 #buddypress div.item-list-tabs ul li.selected a span,
@@ -1336,7 +1336,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	padding: 15px;
 }
 #buddypress div#message-thread div.alt {
-	background: #f4f4f4;
+	background: #fafafa;
 }
 #buddypress div#message-thread p#message-recipients {
 	margin: 10px 0 20px 0;

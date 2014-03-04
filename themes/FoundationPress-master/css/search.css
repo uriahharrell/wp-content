@@ -12,18 +12,23 @@ div#buddypress.search-page div#object-nav ul {
 
 /*Add border and internal color to search and near inputs*/
 #em-wrapper input.em-events-search-text.em-search-text, #em-wrapper input.em-search-geo {
+	display: inline;
 	margin: 10px 0;
 	border: 1px solid #ddd;
 	background: #fafafa;
-	width: 300px;
+	width: 49%;
 }
 
-/*shrink container for magnifying glass and locatino images by search and near inputs*/
+/*shrink container for magnifying glass and location images by search and near inputs*/
 #em-wrapper div.em-search-text.em-search-field, #em-wrapper div.em-search-geo.em-search-field {
 	padding: 0;
 	margin: 0;
 	height: 0;
 	width: 0;
+}
+
+#em-wrapper div.em-search-geo.em-search-field {
+	padding-left: 1.5%;
 }
 
 /*Hide magnifying glass and location images by search and near inputs*/
@@ -40,11 +45,6 @@ div.css-search div.em-search-main .em-search-submit {
 
 }
 
-/*img inside submit button size*/
-div.css-search div.em-search-main .em-search-submit img {
-	height: 25px;
-	width: 25px;
-}
 
 /*remove bottom border and padding on the search and near inputs and submit button container*/
 #em-wrapper div.em-search-main {
@@ -54,9 +54,109 @@ div.css-search div.em-search-main .em-search-submit img {
 
 /*equalize width of all search select*/
 #em-wrapper div.em-search-advanced select {
-	width: 200px;
+	width: 100%;
 }
 
+/*Full width for search results table*/
 div.internal-body section.internal-bg table.events-table {
-	width: 50%;
+	width: 100%;
 }
+
+div.em-search-advanced div.em-search-category.em-search-field {
+	width: 19%;
+	display: inline-block;
+}
+
+div.em-search-advanced div.em-search-location {
+	width: 79%;
+	display: inline-block;
+}
+
+#em-wrapper div.em-search-advanced div.em-search-country.em-search-field {
+	width: 24%;
+	display: inline-block;
+}
+
+#em-wrapper div.em-search-advanced div.em-search-location-meta {
+	width: 74%;
+	display: inline-block;
+}
+
+#em-wrapper div.em-search-advanced div.em-search-region.em-search-field, 
+#em-wrapper div.em-search-advanced  div.em-search-state.em-search-field,
+#em-wrapper div.em-search-advanced  div.em-search-town.em-search-field {
+	width: 32%;
+	display: inline-block;
+}
+
+#em-wrapper div.em-search-advanced  {
+	padding: 0;
+}
+
+/*Search Button*/
+#em-wrapper form.em-events-search-form button.em-search-submit.loading {
+	width: 100%;
+	height: 100%;
+	background: #579b43;
+	text-align: center;
+	padding: 6px 0;
+	margin-top: 15px;
+	margin-bottom: 5px;
+
+}
+
+/*Img inside search btn*/
+#em-wrapper form.em-events-search-form button.em-search-submit.loading img {
+	height: 17px;
+	width: 17px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+/*Test inside search btn*/
+#em-wrapper form.em-events-search-form button.em-search-submit.loading p {
+	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+	font-size: 14pt;
+	display: inline-block;
+	margin-bottom: 0;
+	padding-top: 3px;
+}
+
+#em-wrapper form.em-events-search-form div.em-search-main {
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+/*remove bullet points from divisions in table*/
+table.events-table tbody tr td ul.event-categories li {
+	list-style: none;
+}
+
+div#em-wrapper div.css-search {
+	padding: 10px 15px 13px 15px;
+}
+
+/*Collapse Search box down to one item per row for smaller screens*/
+@media (min-width: 1px) and (max-width: 750px) {
+	#em-wrapper input.em-events-search-text.em-search-text, 
+	#em-wrapper input.em-search-geo,
+	div.em-search-advanced div.em-search-category.em-search-field,
+	div.em-search-advanced div.em-search-location,
+	#em-wrapper div.em-search-advanced div.em-search-country.em-search-field,
+	#em-wrapper div.em-search-advanced div.em-search-location-meta,
+	#em-wrapper div.em-search-advanced div.em-search-region.em-search-field, 
+	#em-wrapper div.em-search-advanced  div.em-search-state.em-search-field,
+	#em-wrapper div.em-search-advanced  div.em-search-town.em-search-field {
+	width: 100%;
+	display: block;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 450px) {
+	table.events-table thead tr th:nth-child(4n), table.events-table tbody tr td:nth-child(4n) {
+		display: none;
+	}
+}
+

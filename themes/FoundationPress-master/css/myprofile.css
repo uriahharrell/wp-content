@@ -96,7 +96,8 @@ div#buddypress div#subnav ul li a {
 
 /*hover state of <a>*/
 div#buddypress div#subnav ul li a:hover {
-	color: #a9e0f9;
+	color: #FFF;
+	background: #3c718e;
 }
 
 #search-message-form {
@@ -105,7 +106,8 @@ div#buddypress div#subnav ul li a:hover {
 
 /*background for sub nav*/
 div#buddypress div#subnav ul li.selected a  {
-	background: #a9e0f9;
+	color: #FFF;
+	background: #3c718e;
 }
 
 

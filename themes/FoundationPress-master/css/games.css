@@ -23,7 +23,7 @@ body div.time-picker ul li.selected {
 
 /*label for division selector box*/
 div#buddypress div#item-body form#event-form div.event-categories label {
-	font-size: 1.6875rem;
+	font-size: 14pt;
 }
 
 /*division selector box styling*/

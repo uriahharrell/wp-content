@@ -33,15 +33,15 @@ require_once('library/theme-support.php');
 add_filter( 'wp_nav_menu_items', 'my_nav_menu_links' );
 function my_nav_menu_links($menu) { 	
 
-	$searchmatcheslink = '<li><a href="' . home_url() . '/matches">' . __('FIND MATCH') . '</a></li>';
+	$searchmatcheslink = '<li><a class="search-link" href="' . home_url() . '/matches">' . __('FIND MATCH') . '</a></li>';
 	
 	if (!is_user_logged_in()) {
-		$creatematchlink = '<li><a href="' . wp_registration_url() . '">' . __('CREATE MATCH') . '</a></li>';
+		$creatematchlink = '<li><a class="create-link" href="' . wp_registration_url() . '">' . __('CREATE MATCH') . '</a></li>';
 		$loginlink = '<li><a href="' . wp_login_url() . '">' . __('LOGIN') . '</a></li>';
 		$menu = $menu . $loginlink;
 	} else {
-		$creatematchlink = '<li><a href="' . bp_loggedin_user_domain() . '/matches/my-events/?action=edit">' . __('CREATE MATCH') . '</a></li>';
-		$profilelink = '<li><a href="' . bp_loggedin_user_domain() . '">' . __('MY PROFILE') . '</a></li>';
+		$creatematchlink = '<li><a class="create-link" href="' . bp_loggedin_user_domain() . '/matches/my-events/?action=edit">' . __('CREATE MATCH') . '</a></li>';
+		$profilelink = '<li><a class="profile-link" href="' . bp_loggedin_user_domain() . '">' . __('MY PROFILE') . '</a></li>';
 		$logoutlink = '<li><a href="' . wp_logout_url( home_url() ) . '">' . __('LOGOUT') . '</a></li>';
 		$menu = $menu . $profilelink . $logoutlink;
 	}
@@ -68,17 +68,12 @@ function my_nav_menu_links_mobile($menu,$args) {
 	return $menu;
 }
 
-
-
-//Remove the admin bar for all users
-show_admin_bar(false);
-
 // Styling for the login page
 function my_login_logo() { ?>
     <style type="text/css">
     	/*background color*/
     	body.login {
-    		background: #fff;
+    		background: #f5f5f5;
 		
 		/*background of login box and logo*/
     	}
@@ -120,4 +115,3 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 ?>
-

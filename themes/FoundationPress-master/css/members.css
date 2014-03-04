@@ -67,3 +67,12 @@ div#item-header-content div#item-meta div#latest-update {
 	
 }
 
+/*Register page goes to one column for small screens*/
+@media (min-width: 1px) and (max-width: 640px) {
+	div#register-page form#signup_form div#basic-details-section.register-section,
+	div#register-page form#signup_form div#profile-details-section.register-section {
+		width: 100%;
+
+	}
+
+}

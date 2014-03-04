@@ -10,7 +10,7 @@
 		<h2 class="subheadline">Find the perfect match or create your own.</h2>
 
 		<div class="wrap columns btn-box">
-			<a class="columns find-btn" href="#">FIND YOUR MATCH</a>
+			<a class="columns find-btn" href="<?php echo( home_url() ); ?>/matches">FIND YOUR MATCH</a>
 			<!-- If the user is not logged in, the create your match button will take you too the registration page -->
 			<?php if (get_option('users_can_register') && !is_user_logged_in()) { ?>
 			<a class="columns create-btn" href="<?php echo bloginfo('wpurl'); ?>/wp-login.php?action=register"><?php _e('CREATE YOUR OWN') ?></a>

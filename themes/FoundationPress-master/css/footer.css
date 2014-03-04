@@ -10,7 +10,7 @@ footer {
 footer img {
 	display: block;
 	max-width: 186px; /*True image width 156px, 186px used to account for 30px padding from columns class*/
-	margin: 82px auto;
+	margin: 67px auto 82px auto;
 	padding: 0 0 0 10px;
 
 }
@@ -51,12 +51,12 @@ footer li a:hover {
 a.contact-btn {
 	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16pt;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	text-align: center;
 	display: block;
 	color: #A9e0f9;
 	background: #3c718E;
-	margin-top: 111px;
+	margin-top: 67px;
 	margin-bottom: 65px;
 	padding: 10px;
 	transition: all 0.3s ease;

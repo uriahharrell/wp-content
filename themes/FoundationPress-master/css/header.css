@@ -26,10 +26,10 @@ nav.top-bar {
 .top-bar-section ul li a, .left-off-canvas-menu ul li a {
 	font-family: MyriadPro-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14pt;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	color: #A9E0f9;
 	background: #234D68;
-	margin-top: 20px;
+	margin-top: 10px;
 	text-align: center;
 
 	transition: all 0.3s ease;
@@ -43,6 +43,11 @@ nav.top-bar {
 nav.tab-bar {
 	background: #234d68;
 }
+
+ul#menu-top-bar-r.menu {
+	margin: 0px;
+}
+
 .left-off-canvas-menu {
 	background: #234d68;
 	border-right: 8px solid #A9E0f9;
@@ -51,11 +56,16 @@ nav.tab-bar {
 .left-off-canvas-menu ul li {
 	list-style: none;
 	margin: 8px 0;
+	padding: 5px 0px 5px 20px;
+	border-bottom: solid 1px #3c718e;
 }
 
 .left-off-canvas-menu ul li a {
-	font-size: 18pt;
+	font-size: 12pt;
 	margin-top: 10px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 2px;
 }
 
 .menu-icon-box {
@@ -76,6 +86,8 @@ nav.tab-bar {
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background: #234D68;
 	line-height: normal;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 /*hover state for the nav btns*/
@@ -83,9 +95,24 @@ nav.tab-bar {
 	background: #234d68;
 }
 
-/*Set medium blue background for last list item (the login)*/
-.top-bar-section li:not(.has-form):last-child a:not(.button) {
-	background: #3c718E;
+/*Highlight FIND MATCH when on find match page*/
+body.page-id-18 .top-bar-section li:not(.has-form) a.search-link:not(.button) {
+	background: #3c718e;
+}
+
+/*Highlight CREATE MATCH when on create match page*/
+body.my-events .top-bar-section li:not(.has-form) a.create-link:not(.button) {
+	background: #3c718e;
+}
+
+/*Highlight MY PROFILE when on any page associated with ones own profile*/
+body.my-account .top-bar-section li:not(.has-form) a.profile-link:not(.button) {
+	background: #3c718e;
+}
+
+/*MY PROFILE does not highlight when under create match section*/
+body.my-events .top-bar-section li:not(.has-form) a.profile-link:not(.button) {
+	background: #234d68;
 }
 
 /*Navigation breaks and requires fixing*/
